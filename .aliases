@@ -1,0 +1,9 @@
+#!/bin/bash
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ls='ls --group-directories-first --color'
+alias lsla='ls -la'
+alias vim='nvim'
+alias v='nvim'
