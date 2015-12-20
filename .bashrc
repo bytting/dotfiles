@@ -1,7 +1,6 @@
 #
 # ~/.bashrc
 #
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -13,8 +12,6 @@ if [ -f $HOME/.aliases ]
 then
 	. $HOME/.aliases
 fi
-
-export TERM="xterm-256color"
 
 if [ -f $HOME/.dir_colors ]
 then
