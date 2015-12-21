@@ -45,7 +45,6 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-inoremap <C-o> <Esc>
 inoremap ¨ <Esc>
 
 nnoremap <C-J> <C-W><C-J>
@@ -64,4 +63,4 @@ endfunc
 
 nnoremap <C-m> :call NumberToggle()<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-p> :BufExplorer<CR>
+nnoremap <C-o> :BufExplorer<CR>

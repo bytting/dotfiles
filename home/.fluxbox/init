@@ -38,7 +38,7 @@ session.screen0.edgeSnapThreshold:	9
 session.screen0.tabFocusModel:	ClickToTabFocus
 session.screen0.colPlacementDirection:	TopToBottom
 session.screen0.opaqueMove:	true
-session.screen0.windowMenu:	/home/drb/.fluxbox/windowmenu
+session.screen0.windowMenu:	~/.fluxbox/windowmenu
 session.screen0.allowRemoteActions:	false
 session.screen0.fullMaximization:	false
 session.screen0.menuDelay:	200
@@ -64,13 +64,13 @@ session.colorsPerChannel:	4
 session.menuFile:	~/.fluxbox/menu-static
 session.keyFile:	~/.fluxbox/keys
 session.tabsAttachArea:	Window
-session.appsFile:	/home/drb/.fluxbox/apps
+session.appsFile:	~/.fluxbox/apps
 session.configVersion:	13
 session.tabPadding:	0
-session.styleOverlay:	/home/drb/.fluxbox/overlay
+session.styleOverlay:	~/.fluxbox/overlay
 session.ignoreBorder:	false
 session.autoRaiseDelay:	250
-session.slitlistFile:	/home/drb/.fluxbox/slitlist
+session.slitlistFile:	~/.fluxbox/slitlist
 session.doubleClickInterval:	250
 session.forcePseudoTransparency:	false
 session.menuSearch:	itemstart
