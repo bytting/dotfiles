@@ -1,20 +1,20 @@
 XTerm*locale: true
-XTerm*geometry: 120x40
-!!XTerm*faceName: Droid Sans Mono:size=12
-XTerm*faceName: Source Code Pro Medium:size=16
+XTerm*geometry: 100x30
+!! XTerm*faceName: Droid Sans Mono:size=12
+XTerm*faceName: Source Code Pro Medium:size=14
 XTerm*metaSendsEscape: true
-XTerm*saveLines: 4096
+XTerm*saveLines: 2000
 XTerm*termName: xterm-256color
 XTerm*cursorColor: orange
 XTerm*cursorBlink: true
 
 URxvt.intensityStyles: false
-URxvt*geometry: 120x40
+URxvt*geometry: 100x30
 URxvt*scrollBar: false
 URxvt*saveLines: 2000
 URxvt*buffered: true
 URxvt.termName: rxvt-256color
-URxvt*font: xft:Source Code Pro Medium:size=16
+URxvt*font: xft:Source Code Pro Medium:size=14
 
 !! solarized light
 

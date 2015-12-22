@@ -47,15 +47,13 @@ syntax enable
 set background=dark
 
 " GRUVBOX
-let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
 
 " SOLARIZED
 " let g:solarized_termcolors=256
 " colorscheme solarized
-
-inoremap ¨ <Esc>
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -71,6 +69,7 @@ function! NumberToggle()
   endif
 endfunc
 
+inoremap <C-n> <Esc>
 nnoremap <C-m> :call NumberToggle()<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-p> :NERDTreeToggle<CR>
 nnoremap <C-o> :BufExplorer<CR>

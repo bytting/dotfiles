@@ -1,10 +1,10 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-    [exec] (urxvt) {urxvt}
+	[exec] (urxvt) {urxvt}
 	[exec] (mousepad) {mousepad}
 	[exec] (thunar) {thunar}
 	[exec] (chromium) {chromium}
-    [exec] (hexchat) {hexchat}
+	[exec] (hexchat) {hexchat}
 	[submenu] (network)
 		[exec] (chrome) {google-chrome-stable}
         [exec] (firefox) {firefox}
