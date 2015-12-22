@@ -2,8 +2,15 @@ set nocompatible
 
 filetype off
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
+if has('nvim')
+    let s:editor_root=expand("~/.config/nvim")
+else
+    let s:editor_root=expand("~/.vim")
+endif
 
+let &rtp = &rtp . ',' . s:editor_root . '/bundle/Vundle.vim'
+
+call vundle#rc(s:editor_root . '/bundle')
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -11,6 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdTree'
 Plugin 'tpope/vim-surround'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'luochen1990/rainbow'
 
 call vundle#end()
 
@@ -32,18 +40,19 @@ set mouse=a
 set t_Co=256
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let g:rainbow_active = 1
 
 syntax enable
 set background=dark
 
 " GRUVBOX
-" let g:gruvbox_contrast_dark="medium"
-" let g:gruvbox_contrast_light="hard"
-" colorscheme gruvbox
+let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_contrast_light="hard"
+colorscheme gruvbox
 
 " SOLARIZED
-let g:solarized_termcolors=256
-colorscheme solarized
+" let g:solarized_termcolors=256
+" colorscheme solarized
 
 inoremap ¨ <Esc>
 
