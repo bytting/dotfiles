@@ -37,6 +37,7 @@ set nobackup
 set wildmenu
 set nowrap
 set mouse=a
+set colorcolumn=80
 set t_Co=256
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
