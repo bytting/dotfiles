@@ -1,7 +1,15 @@
 
+xset s off
+xset -dpms
+
+if [ -f $HOME/.Xresources ]
+then
+    xrdb -merge ~/.Xresources
+fi
+
 if [ -f $HOME/.screenlayout/default.sh ]
 then
-        . $HOME/.screenlayout/default.sh
+    . $HOME/.screenlayout/default.sh
 fi
 
 xmodmap -e "keycode 30 = u U NoSymbol NoSymbol equal"
