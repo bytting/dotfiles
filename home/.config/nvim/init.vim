@@ -69,7 +69,6 @@ function! NumberToggle()
   endif
 endfunc
 
-inoremap <C-n> <Esc>
 nnoremap <C-m> :call NumberToggle()<CR>
 nnoremap <C-p> :NERDTreeToggle<CR>
 nnoremap <C-o> :BufExplorer<CR>
