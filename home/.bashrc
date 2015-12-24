@@ -8,15 +8,8 @@ PS1='[\u@\h \W]\$ '
 
 # set -o vi
 
-if [ -f $HOME/.aliases ]
-then
-	. $HOME/.aliases
-fi
-
-if [ -f $HOME/.dir_colors ]
-then
-	eval `dircolors -b $HOME/.dir_colors`
-fi
+[ -f $HOME/.aliases ] && source $HOME/.aliases
+[ -f $HOME/.dir_colors ] && eval `dircolors -b $HOME/.dir_colors`
 
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
