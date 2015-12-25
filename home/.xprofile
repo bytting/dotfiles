@@ -4,6 +4,8 @@ xset -dpms
 [ -f $HOME/.Xresources ] && xrdb -merge ~/.Xresources
 [ -f $HOME/.screenlayout/default.sh ] && source $HOME/.screenlayout/default.sh
 
+setxkbmap -model pc105 -layout no -variant nodeadkeys -option ctrl:nocaps,lv3:lsgt_switch_latch
+
 xmodmap -e "keycode 30 = u U NoSymbol NoSymbol equal"
 xmodmap -e "keycode 31 = i I NoSymbol NoSymbol less"
 xmodmap -e "keycode 32 = o O NoSymbol NoSymbol greater"
