@@ -1,15 +1,13 @@
 #!/bin/sh
 
-src_dir=`cd $(dirname $0)/home && pwd`
-dest_dir=$HOME
+src=`cd $(dirname $0)/home && pwd`
 
-for target in `find $src_dir -type d`
+for target in `find $src -type d`
 do
-    mkdir -p $target | sed "s#$src_dir#$dest_dir#"
+    mkdir -p ${target/#$src/$HOME}
 done
 
-for target in `find $src_dir -type f`
+for target in `find $src -type f`
 do
-    link_name=`echo $target | sed "s#$src_dir#$dest_dir#"`
-    ln -sf $target $link_name
+    ln -sf $target ${target/#$src/$HOME}
 done
