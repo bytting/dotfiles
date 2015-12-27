@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -34,12 +35,15 @@ set showmode
 set tabstop=4
 set shiftwidth=4
 set wildmenu
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set nowrap
 set mouse=a
 set colorcolumn=80
 set t_Co=256
 
 au FocusLost * silent! wa
+
+let g:ctrlp_working_path_mode = 'ra'
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rainbow_active = 1
