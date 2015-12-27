@@ -24,6 +24,9 @@ call vundle#end()
 
 filetype plugin indent on
 
+set backupdir=/var/tmp,/tmp
+set directory=/var/tmp,/tmp
+set autowrite
 set expandtab
 set ruler
 set number
@@ -33,12 +36,13 @@ set showmatch
 set showmode
 set tabstop=4
 set shiftwidth=4
-set nobackup
 set wildmenu
 set nowrap
 set mouse=a
 set colorcolumn=80
 set t_Co=256
+
+au FocusLost * silent! wa
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rainbow_active = 1
