@@ -10,13 +10,14 @@ endif
 
 call plug#begin(s:editor_root . '/plugged')
 
-Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdTree'
 Plug 'tpope/vim-surround'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -26,24 +27,22 @@ set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 set autowrite
 set expandtab
-set ruler
 set number
 set hlsearch
-set showcmd
 set showmatch
-set showmode
 set tabstop=4
 set shiftwidth=4
 set wildmenu
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.tgz,*.tar.gz
 set nowrap
 set mouse=a
-set colorcolumn=80
 set t_Co=256
 
 au FocusLost * silent! wa
 
-let g:ctrlp_working_path_mode = 'ra'
+let mapleader = "¨"
+
+nmap <Space> <Plug>(easymotion-s)
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rainbow_active = 1
@@ -80,4 +79,11 @@ nnoremap <F8> :TagbarToggle<CR>
 
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
+nmap <C-i> :nohl<CR>
 
+nmap <C-Tab> :tabnext<CR>
+nmap <C-S-Tab> :tabprevious<CR>
+map <C-Tab> :tabnext<CR>
+map <C-S-Tab> :tabprevious<CR>
+imap <C-Tab> <ESC>:tabnext<CR>
+imap <C-S-Tab> <ESC>:tabprevious<CR>
