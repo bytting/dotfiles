@@ -59,11 +59,6 @@ colorscheme gruvbox
 " let g:solarized_termcolors=256
 " colorscheme solarized
 
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 " Relative line numbers toggle
 function! NumberToggle()
   if(&relativenumber == 1)
@@ -73,6 +68,14 @@ function! NumberToggle()
   endif
 endfunc
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
 nnoremap <C-p> :NERDTreeToggle<CR>
 nnoremap <C-o> :BufExplorer<CR>
+
+nmap <C-s> :w<CR>
+imap <C-s> <Esc>:w<CR>a
+
