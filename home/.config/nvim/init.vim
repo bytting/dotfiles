@@ -8,19 +8,16 @@ else
     let s:editor_root=expand("~/.vim")
 endif
 
-let &rtp = &rtp . ',' . s:editor_root . '/bundle/Vundle.vim'
+call plug#begin(s:editor_root . '/plugged')
 
-call vundle#rc(s:editor_root . '/bundle')
-call vundle#begin()
+Plug 'VundleVim/Vundle.vim'
+Plug 'scrooloose/nerdTree'
+Plug 'tpope/vim-surround'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'luochen1990/rainbow'
+Plug 'majutsushi/tagbar'
 
-Plugin 'VundleVim/Vundle.vim'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/nerdTree'
-Plugin 'tpope/vim-surround'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'luochen1990/rainbow'
-
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 
@@ -73,8 +70,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
-nnoremap <C-p> :NERDTreeToggle<CR>
 nnoremap <C-o> :BufExplorer<CR>
+nnoremap <F7> :NERDTreeToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
