@@ -23,26 +23,29 @@ call plug#end()
 
 filetype plugin indent on
 
+let mapleader = "\<Space>"
+
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+au InsertLeave * match ExtraWhitespace /\s\+$/
+
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 set autowrite
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
 set expandtab
 set number
 set hlsearch
 set showmatch
-set tabstop=4
-set shiftwidth=4
 set wildmenu
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.tgz,*.tar.gz
+set wildignore+=*/tmp/*,*.so,*.o,*.swp,*~,*.zip,*.tgz,*.tar.gz
 set nowrap
 set mouse=a
 set t_Co=256
 
 au FocusLost * silent! wa
-
-let mapleader = "¨"
-
-nmap <Space> <Plug>(easymotion-s)
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rainbow_active = 1
@@ -58,6 +61,11 @@ colorscheme gruvbox
 " SOLARIZED
 " let g:solarized_termcolors=256
 " colorscheme solarized
+
+set foldmethod=indent   "fold based on indent
+set foldnestmax=6       "deepest fold is 6 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1
 
 " Relative line numbers toggle
 function! NumberToggle()
@@ -81,9 +89,4 @@ nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
 nmap <C-i> :nohl<CR>
 
-nmap <C-Tab> :tabnext<CR>
-nmap <C-S-Tab> :tabprevious<CR>
-map <C-Tab> :tabnext<CR>
-map <C-S-Tab> :tabprevious<CR>
-imap <C-Tab> <ESC>:tabnext<CR>
-imap <C-S-Tab> <ESC>:tabprevious<CR>
+map <Leader> <Plug>(easymotion-prefix)
