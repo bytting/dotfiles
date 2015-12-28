@@ -18,6 +18,7 @@ Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
+Plug 'benekastah/neomake'
 
 call plug#end()
 
