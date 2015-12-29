@@ -19,6 +19,8 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'benekastah/neomake'
+Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
