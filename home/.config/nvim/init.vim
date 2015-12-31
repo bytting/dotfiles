@@ -21,6 +21,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'benekastah/neomake'
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
+Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 
@@ -51,6 +52,9 @@ set t_Co=256
 au FocusLost * silent! wa
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+let g:deoplete#enable_at_startup = 1
+
 let g:rainbow_active = 1
 
 syntax enable
@@ -62,8 +66,8 @@ let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
 
 " SOLARIZED
-" let g:solarized_termcolors=256
-" colorscheme solarized
+"let g:solarized_termcolors=256
+"colorscheme solarized
 
 set foldmethod=indent   "fold based on indent
 set foldnestmax=6       "deepest fold is 6 levels
