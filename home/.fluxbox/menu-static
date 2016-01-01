@@ -4,14 +4,11 @@
 	[exec] (mousepad) {mousepad}
 	[exec] (thunar) {thunar}
 	[exec] (chromium) {chromium}
-	[exec] (hexchat) {hexchat}
-	[submenu] (network)
-		[exec] (chrome) {google-chrome-stable}
-        [exec] (firefox) {firefox}
-		[exec] (tor-browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
-		[exec] (transmission) {transmission-gtk}
-		[exec] (filezilla) {filezilla}
-        [exec] (hexchat) {hexchat}
+	[submenu] (devel)
+	    [exec] (gitter) {gitter}
+		[exec] (sublime-text) {subl3}
+        [exec] (qtcreator) {qtcreator}
+        [exec] (wxHexEditor) {wxHexEditor}
 	[end]
 	[submenu] (office)
 		[exec] (galculator) {galculator}
@@ -22,10 +19,12 @@
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
 	[end]
-	[submenu] (devel)
-		[exec] (sublime-text) {subl3}
-        [exec] (qtcreator) {qtcreator}
-        [exec] (wxHexEditor) {wxHexEditor}
+	[submenu] (network)
+        [exec] (firefox) {firefox}
+		[exec] (tor-browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
+		[exec] (transmission) {transmission-gtk}
+		[exec] (filezilla) {filezilla}
+        [exec] (hexchat) {hexchat}
 	[end]
     [submenu] (system)
         [exec] (arandr) {arandr}
