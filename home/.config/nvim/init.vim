@@ -69,6 +69,8 @@ colorscheme gruvbox
 "let g:solarized_termcolors=256
 "colorscheme solarized
 
+set clipboard=unnamed
+
 set foldmethod=indent   "fold based on indent
 set foldnestmax=6       "deepest fold is 6 levels
 set nofoldenable        "dont fold by default
