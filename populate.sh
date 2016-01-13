@@ -3,7 +3,7 @@
 # Store path to dotfiles
 src=`cd $(dirname $0)/home && pwd`
 
-# Create folders under $HOME
+# Create directories under $HOME
 for target in `find $src -type d`
 do
     mkdir -p ${target/#$src/$HOME}
