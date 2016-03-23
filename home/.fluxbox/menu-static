@@ -5,14 +5,18 @@
 	[exec] (thunar) {thunar}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
-	    [exec] (gitter) {gitter}
+		[exec] (gitter) {gitter}
 		[exec] (sublime-text) {subl3}
-        [exec] (qtcreator) {qtcreator}
+        [exec] (qtcreator) {qtcreator -style gtk}
+		[exec] (blender) {blender}
+		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
         [exec] (wxHexEditor) {wxHexEditor}
 	[end]
 	[submenu] (office)
+		[exec] (electrum) {electrum}
 		[exec] (galculator) {galculator}
-		[exec] (qpdfview) {qpdfview}
+		[exec] (qpdfview) {qpdfview -style gtk}
+		[exec] (libreoffice) {libreoffice}
 	[end]
 	[submenu] (media)
 		[exec] (gimp) {gimp}
@@ -20,15 +24,16 @@
 		[exec] (vlc) {vlc}
 	[end]
 	[submenu] (network)
-        [exec] (firefox) {firefox}
+		[exec] (firefox) {firefox}
+		[exec] (qtox) {qtox -style gtk}
 		[exec] (tor-browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
 		[exec] (transmission) {transmission-gtk}
 		[exec] (filezilla) {filezilla}
-        [exec] (hexchat) {hexchat}
+		[exec] (hexchat) {hexchat}
 	[end]
-    [submenu] (system)
-        [exec] (arandr) {arandr}
-    [end]
+	[submenu] (system)
+		[exec] (arandr) {arandr}
+	[end]
 	[include] (~/.fluxbox/menu-dynamic)
 	[submenu] (Fluxbox menu)
 		[exec] (Update Menu) {xdg_menu --format fluxbox  --root-menu /etc/xdg/menus/arch-applications.menu > ~/.fluxbox/menu-dynamic}
