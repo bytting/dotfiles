@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Store path to dotfiles
 src=`cd $(dirname $0)/home && pwd`

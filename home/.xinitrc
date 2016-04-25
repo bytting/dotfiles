@@ -2,4 +2,5 @@
 
 [ -f ~/.xprofile ] && source ~/.xprofile
 
-exec startfluxbox
+exec cinnamon-session
+#exec startfluxbox
