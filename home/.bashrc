@@ -11,5 +11,7 @@ PS1='[\u@\h \W]\$ '
 [ -f $HOME/.aliases ] && source $HOME/.aliases
 [ -f $HOME/.dir_colors ] && eval `dircolors -b $HOME/.dir_colors`
 
+export RANGER_LOAD_DEFAULT_RC=FALSE
+
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
