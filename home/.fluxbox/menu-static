@@ -8,6 +8,7 @@
 		[exec] (gitter) {gitter}
 		[exec] (sublime-text) {subl3}
         [exec] (qtcreator) {qtcreator -style gtk}
+        [exec] (robomongo) {robomongo}
 		[exec] (blender) {blender}
 		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
         [exec] (wxHexEditor) {wxHexEditor}
@@ -33,6 +34,7 @@
 	[end]
 	[submenu] (system)
 		[exec] (arandr) {arandr}
+		[exec] (gufw) {gksu gufw}
 	[end]
 	[include] (~/.fluxbox/menu-dynamic)
 	[submenu] (Fluxbox menu)
