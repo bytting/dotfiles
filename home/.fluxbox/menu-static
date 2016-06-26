@@ -3,12 +3,14 @@
 	[exec] (urxvt) {urxvt}
 	[exec] (mousepad) {mousepad}
 	[exec] (thunar) {thunar}
+	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
 		[exec] (gitter) {gitter}
 		[exec] (sublime-text) {subl3}
-        [exec] (qtcreator) {qtcreator -style gtk}
-        [exec] (robomongo) {robomongo}
+		[exec] (qtcreator) {qtcreator -style gtk}
+		[exec] (robomongo) {robomongo}
+		[exec] (sqlitebrowser) {sqlitebrowser}
 		[exec] (blender) {blender}
 		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
         [exec] (wxHexEditor) {wxHexEditor}
@@ -28,7 +30,7 @@
 		[exec] (firefox) {firefox}
 		[exec] (qtox) {qtox -style gtk}
 		[exec] (tor-browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
-		[exec] (transmission) {transmission-gtk}
+		[exec] (transmission) {transmission-qt}
 		[exec] (filezilla) {filezilla}
 		[exec] (hexchat) {hexchat}
 	[end]

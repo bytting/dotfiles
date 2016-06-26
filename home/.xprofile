@@ -27,3 +27,5 @@ xmodmap -e "keycode 58 = m M NoSymbol NoSymbol at"
 xmodmap -e "keycode 59 = comma semicolon NoSymbol NoSymbol exclam"
 xmodmap -e "keycode 60 = period colon NoSymbol NoSymbol percent"
 xmodmap -e "keycode 61 = minus underscore NoSymbol NoSymbol ampersand"
+
+export QT_QPA_PLATFORMTHEME="qt5ct"

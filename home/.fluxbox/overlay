@@ -2,7 +2,7 @@
 background: solid
 background.color: #000000
 
-menu.title.font:                        liberation sans-22:bold
+menu.title.font:                        liberation sans-24:bold
 menu.frame.font:                        liberation sans-20:bold
 menu.hilite.font:                       liberation sans-20:bold
 toolbar.clock.font:                     liberation sans-12:bold
