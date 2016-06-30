@@ -9,7 +9,7 @@ XTerm*cursorColor: orange
 XTerm*cursorBlink: true
 
 URxvt.intensityStyles: false
-URxvt*geometry: 100x30
+URxvt*geometry: 100x35
 URxvt*scrollBar: false
 URxvt*saveLines: 2000
 URxvt*buffered: true

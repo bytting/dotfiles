@@ -13,5 +13,7 @@ PS1='[\u@\h \W]\$ '
 
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
+export GOROOT=/usr/lib/go
 export GOPATH=$HOME/dev/go
+
 export PATH=$PATH:$GOPATH/bin

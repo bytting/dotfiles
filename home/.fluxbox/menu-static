@@ -1,8 +1,8 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
 	[exec] (urxvt) {urxvt}
-	[exec] (mousepad) {mousepad}
-	[exec] (thunar) {thunar}
+	[exec] (pluma) {pluma}
+	[exec] (caja) {caja}
 	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
@@ -18,10 +18,11 @@
 	[submenu] (office)
 		[exec] (electrum) {electrum}
 		[exec] (galculator) {galculator}
-		[exec] (qpdfview) {qpdfview -style gtk}
+		[exec] (atril) {atril}
 		[exec] (libreoffice) {libreoffice}
 	[end]
 	[submenu] (media)
+		[exec] (eom) {eom}
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
@@ -30,7 +31,7 @@
 		[exec] (firefox) {firefox}
 		[exec] (qtox) {qtox -style gtk}
 		[exec] (tor-browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
-		[exec] (transmission) {transmission-qt}
+		[exec] (transmission) {transmission-gtk}
 		[exec] (filezilla) {filezilla}
 		[exec] (hexchat) {hexchat}
 	[end]
