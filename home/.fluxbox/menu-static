@@ -36,6 +36,7 @@
 		[exec] (hexchat) {hexchat}
 	[end]
 	[submenu] (system)
+        [exec] (mate-system-monitor) {mate-system-monitor}
 		[exec] (arandr) {arandr}
 		[exec] (gufw) {gksu gufw}
 	[end]
