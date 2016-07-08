@@ -1,8 +1,8 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
 	[exec] (urxvt) {urxvt}
-	[exec] (pluma) {pluma}
-	[exec] (caja) {caja}
+	[exec] (mousepad) {mousepad}
+	[exec] (thunar) {thunar}
 	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
@@ -22,7 +22,7 @@
 		[exec] (libreoffice) {libreoffice}
 	[end]
 	[submenu] (media)
-		[exec] (eom) {eom}
+		[exec] (ristretto) {ristretto}
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
@@ -36,7 +36,6 @@
 		[exec] (hexchat) {hexchat}
 	[end]
 	[submenu] (system)
-        [exec] (mate-system-monitor) {mate-system-monitor}
 		[exec] (arandr) {arandr}
 		[exec] (gufw) {gksu gufw}
 	[end]

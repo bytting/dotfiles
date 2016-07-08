@@ -12,22 +12,20 @@ call plug#begin(s:editor_root . '/plugged')
 
 Plug 'scrooloose/nerdTree'
 Plug 'tpope/vim-surround'
-Plug 'jlanzarotta/bufexplorer'
-Plug 'luochen1990/rainbow'
+"Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'easymotion/vim-easymotion'
-Plug 'benekastah/neomake'
+"Plug 'benekastah/neomake'
 Plug 'morhetz/gruvbox'
-Plug 'altercation/vim-colors-solarized'
-Plug 'Shougo/deoplete.nvim'
+"Plug 'altercation/vim-colors-solarized'
+"Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 
 filetype plugin indent on
 
-let mapleader = "\<Space>"
+"let mapleader = "\<Space>"
 
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
@@ -53,9 +51,9 @@ au FocusLost * silent! wa
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
-let g:rainbow_active = 1
+"let g:rainbow_active = 1
 
 syntax enable
 set background=dark
@@ -90,7 +88,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
-nnoremap <C-o> :BufExplorer<CR>
+"nnoremap <C-o> :BufExplorer<CR>
 nnoremap <F7> :NERDTreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 
@@ -98,4 +96,4 @@ nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
 nmap <C-i> :nohl<CR>
 
-map <Leader> <Plug>(easymotion-prefix)
+"map <Leader> <Plug>(easymotion-prefix)
