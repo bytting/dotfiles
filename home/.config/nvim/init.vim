@@ -13,7 +13,7 @@ call plug#begin(s:editor_root . '/plugged')
 Plug 'scrooloose/nerdTree'
 Plug 'tpope/vim-surround'
 "Plug 'luochen1990/rainbow'
-Plug 'majutsushi/tagbar'
+"Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
 "Plug 'benekastah/neomake'
@@ -90,7 +90,7 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
 "nnoremap <C-o> :BufExplorer<CR>
 nnoremap <F7> :NERDTreeToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
+"nnoremap <F8> :TagbarToggle<CR>
 
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a

@@ -1,13 +1,13 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
 	[exec] (urxvt) {urxvt}
-	[exec] (mousepad) {mousepad}
-	[exec] (thunar) {thunar}
+	[exec] (pluma) {pluma}
+	[exec] (caja) {caja}
 	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
 		[exec] (gitter) {gitter}
-		[exec] (sublime-text) {subl3}
+		[exec] (sublime text) {subl3}
 		[exec] (qtcreator) {qtcreator -style gtk}
 		[exec] (robomongo) {robomongo}
 		[exec] (sqlitebrowser) {sqlitebrowser}
@@ -20,9 +20,10 @@
 		[exec] (galculator) {galculator}
 		[exec] (atril) {atril}
 		[exec] (libreoffice) {libreoffice}
+		[exec] (engrampa) {engrampa}
 	[end]
 	[submenu] (media)
-		[exec] (ristretto) {ristretto}
+		[exec] (eom) {eom}
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
@@ -30,13 +31,14 @@
 	[submenu] (network)
 		[exec] (firefox) {firefox}
 		[exec] (qtox) {qtox -style gtk}
-		[exec] (tor-browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
+		[exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
 		[exec] (transmission) {transmission-gtk}
 		[exec] (filezilla) {filezilla}
 		[exec] (hexchat) {hexchat}
 	[end]
 	[submenu] (system)
 		[exec] (arandr) {arandr}
+        [exec] (system monitor) {mate-system-monitor}
 		[exec] (gufw) {gksu gufw}
 	[end]
 	[include] (~/.fluxbox/menu-dynamic)
