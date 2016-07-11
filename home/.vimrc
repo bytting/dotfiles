@@ -24,6 +24,9 @@ filetype plugin indent on
 
 let g:ycm_confirm_extra_conf = 0
 
+" remove trailing whitespace on write
+autocmd FileType c,cc,cpp,h,hh,hpp,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+
 " If you prefer the Omni-Completion tip window to close when a selection is
 " made, these lines close it on movement in insert mode or when leaving
 " insert mode

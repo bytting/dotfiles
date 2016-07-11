@@ -26,6 +26,9 @@ call plug#end()
 
 filetype plugin indent on
 
+" remove trailing whitespace on write
+autocmd FileType c,cc,cpp,h,hh,hpp,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
