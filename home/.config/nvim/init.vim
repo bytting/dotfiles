@@ -14,6 +14,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
 "Plug 'altercation/vim-colors-solarized'
 "Plug 'Shougo/deoplete.nvim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 

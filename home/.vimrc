@@ -7,11 +7,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
-Plug 'altercation/vim-colors-solarized'
+"Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
-Plug 'scrooloose/nerdTree'
-Plug 'luochen1990/rainbow'
-Plug 'majutsushi/tagbar'
+"Plug 'scrooloose/nerdTree'
+"Plug 'luochen1990/rainbow'
+"Plug 'majutsushi/tagbar'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
