@@ -2,28 +2,33 @@ set nocompatible
 
 filetype off
 
-if has('nvim')
-    let s:editor_root=expand("~/.config/nvim")
-else
-    let s:editor_root=expand("~/.vim")
-endif
 
-call plug#begin(s:editor_root . '/plugged')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Plug 'scrooloose/nerdTree'
-Plug 'tpope/vim-surround'
-"Plug 'luochen1990/rainbow'
-"Plug 'majutsushi/tagbar'
-Plug 'bling/vim-airline'
-Plug 'tpope/vim-fugitive'
-"Plug 'benekastah/neomake'
-Plug 'morhetz/gruvbox'
-"Plug 'altercation/vim-colors-solarized'
-"Plug 'Shougo/deoplete.nvim'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-call plug#end()
+Plugin 'scrooloose/nerdTree'
+Plugin 'tpope/vim-surround'
+Plugin 'luochen1990/rainbow'
+"Plugin 'majutsushi/tagbar'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'morhetz/gruvbox'
+
+call vundle#end()
+
 
 filetype plugin indent on
+
+let g:ycm_confirm_extra_conf = 0
+
+" If you prefer the Omni-Completion tip window to close when a selection is
+" made, these lines close it on movement in insert mode or when leaving
+" insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
@@ -47,11 +52,7 @@ set t_Co=256
 
 au FocusLost * silent! wa
 
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-"let g:deoplete#enable_at_startup = 1
-
-"let g:rainbow_active = 1
+let g:rainbow_active = 1
 
 syntax enable
 set background=dark
@@ -60,10 +61,6 @@ set background=dark
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
-
-" SOLARIZED
-"let g:solarized_termcolors=256
-"colorscheme solarized
 
 set clipboard=unnamed
 

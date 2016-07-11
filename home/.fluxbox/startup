@@ -3,7 +3,7 @@
 compton -b
 dunst &
 nm-applet &
-thunar --daemon &
+#thunar --daemon &
 
 exec fluxbox
 # exec fluxbox -log "/home/drb/.fluxbox/log"
