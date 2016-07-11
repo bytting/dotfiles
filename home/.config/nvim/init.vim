@@ -11,6 +11,7 @@ endif
 call plug#begin(s:editor_root . '/plugged')
 
 Plug 'scrooloose/nerdTree'
+Plug 'jlanzarotta/bufexplorer'
 Plug 'tpope/vim-surround'
 "Plug 'luochen1990/rainbow'
 "Plug 'majutsushi/tagbar'
@@ -86,7 +87,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
-"nnoremap <C-o> :BufExplorer<CR>
+nnoremap <C-o> :BufExplorer<CR>
 nnoremap <F7> :NERDTreeToggle<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 

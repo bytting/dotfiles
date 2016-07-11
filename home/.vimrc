@@ -8,7 +8,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'jlanzarotta/bufexplorer'
 Plugin 'scrooloose/nerdTree'
 Plugin 'tpope/vim-surround'
 Plugin 'luochen1990/rainbow'
@@ -83,7 +83,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
-"nnoremap <C-o> :BufExplorer<CR>
+nnoremap <C-o> :BufExplorer<CR>
 nnoremap <F7> :NERDTreeToggle<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 
