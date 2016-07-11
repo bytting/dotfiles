@@ -1,15 +1,17 @@
 set nocompatible
 
+" Disable filetype before loading plugins
 filetype off
 
+" Load plugins
 call plug#begin('~/.config/nvim/plugged')
 
 "Plug 'scrooloose/nerdTree'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
 "Plug 'luochen1990/rainbow'
 "Plug 'majutsushi/tagbar'
-Plug 'bling/vim-airline'
-Plug 'tpope/vim-fugitive'
 "Plug 'benekastah/neomake'
 Plug 'morhetz/gruvbox'
 "Plug 'altercation/vim-colors-solarized'
@@ -21,14 +23,22 @@ call plug#end()
 
 filetype plugin indent on
 
+" Plugin settings
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"let g:deoplete#enable_at_startup = 1
+"let g:rainbow_active = 1
+
+" Disable confirmation for ycm config
 let g:ycm_confirm_extra_conf = 0
 
 " remove trailing whitespace on write
 autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
 
+" Highlight trailing whitespace in red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
+" General settings
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 set autowrite
@@ -46,14 +56,10 @@ set nowrap
 set mouse=a
 set t_Co=256
 
+" Disable complaining when switching from unsaved buffers
 au FocusLost * silent! wa
 
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-"let g:deoplete#enable_at_startup = 1
-
-"let g:rainbow_active = 1
-
+" Set color scheme
 syntax enable
 set background=dark
 
@@ -82,6 +88,7 @@ function! NumberToggle()
   endif
 endfunc
 
+" Keybindings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>

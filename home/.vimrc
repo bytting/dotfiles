@@ -1,5 +1,6 @@
 set nocompatible
 
+" Disable filetype while loading plugins
 filetype off
 
 call plug#begin('~/.vim/plugged')
@@ -19,6 +20,10 @@ call plug#end()
 
 filetype plugin indent on
 
+" Plugin configurations
+"let g:rainbow_active = 1
+
+" Disable confirmation for ycm configurations
 let g:ycm_confirm_extra_conf = 0
 
 " remove trailing whitespace on write
@@ -28,9 +33,11 @@ autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buf
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+" Mark trailing whitespaces with red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
+" General settings
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 set autowrite
@@ -48,10 +55,10 @@ set nowrap
 set mouse=a
 set t_Co=256
 
+" Stop complaining about switching away from unsaved buffers
 au FocusLost * silent! wa
 
-let g:rainbow_active = 1
-
+" Set color scheme
 syntax enable
 set background=dark
 
@@ -64,7 +71,7 @@ colorscheme gruvbox
 "let g:solarized_termcolors=256
 "colorscheme solarized
 
-set clipboard=unnamed
+"set clipboard=unnamed
 
 set foldmethod=indent   "fold based on indent
 set foldnestmax=6       "deepest fold is 6 levels
@@ -80,6 +87,7 @@ function! NumberToggle()
   endif
 endfunc
 
+" Keymappings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
