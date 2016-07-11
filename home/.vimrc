@@ -2,34 +2,27 @@ set nocompatible
 
 filetype off
 
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'scrooloose/nerdTree'
+Plug 'luochen1990/rainbow'
+Plug 'majutsushi/tagbar'
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-"Plugin 'jlanzarotta/bufexplorer'
-Plugin 'scrooloose/nerdTree'
-Plugin 'tpope/vim-surround'
-"Plugin 'luochen1990/rainbow'
-"Plugin 'majutsushi/tagbar'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'morhetz/gruvbox'
-
-call vundle#end()
-
+call plug#end()
 
 filetype plugin indent on
 
 let g:ycm_confirm_extra_conf = 0
 
 " remove trailing whitespace on write
-autocmd FileType c,cc,cpp,h,hh,hpp,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
 
-" If you prefer the Omni-Completion tip window to close when a selection is
-" made, these lines close it on movement in insert mode or when leaving
-" insert mode
+" Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
@@ -65,6 +58,10 @@ let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
 
+" SOLARIZED
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
 set clipboard=unnamed
 
 set foldmethod=indent   "fold based on indent
@@ -86,8 +83,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
-nnoremap <C-o> :BufExplorer<CR>
-nnoremap <F7> :NERDTreeToggle<CR>
+"nnoremap <F7> :NERDTreeToggle<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 
 nmap <C-s> :w<CR>

@@ -23,6 +23,7 @@ flags = [
 '-I', '/usr/include/OGRE/Threading',
 '-I', '/usr/include/OGRE/Volume',
 '-I', '/usr/include/OGRE/Paging',
+'-I', '/usr/include/OIS',
 '-I', '.'
 ]
 

@@ -2,16 +2,9 @@ set nocompatible
 
 filetype off
 
-if has('nvim')
-    let s:editor_root=expand("~/.config/nvim")
-else
-    let s:editor_root=expand("~/.vim")
-endif
+call plug#begin('~/.config/nvim/plugged')
 
-call plug#begin(s:editor_root . '/plugged')
-
-Plug 'scrooloose/nerdTree'
-"Plug 'jlanzarotta/bufexplorer'
+"Plug 'scrooloose/nerdTree'
 Plug 'tpope/vim-surround'
 "Plug 'luochen1990/rainbow'
 "Plug 'majutsushi/tagbar'
@@ -26,8 +19,10 @@ call plug#end()
 
 filetype plugin indent on
 
+let g:ycm_confirm_extra_conf = 0
+
 " remove trailing whitespace on write
-autocmd FileType c,cc,cpp,h,hh,hpp,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
 
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
@@ -90,8 +85,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
-nnoremap <C-o> :BufExplorer<CR>
-nnoremap <F7> :NERDTreeToggle<CR>
+"nnoremap <F7> :NERDTreeToggle<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 
 nmap <C-s> :w<CR>
