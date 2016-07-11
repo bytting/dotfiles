@@ -11,7 +11,7 @@ endif
 call plug#begin(s:editor_root . '/plugged')
 
 Plug 'scrooloose/nerdTree'
-Plug 'jlanzarotta/bufexplorer'
+"Plug 'jlanzarotta/bufexplorer'
 Plug 'tpope/vim-surround'
 "Plug 'luochen1990/rainbow'
 "Plug 'majutsushi/tagbar'

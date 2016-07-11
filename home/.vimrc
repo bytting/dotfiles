@@ -8,10 +8,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'jlanzarotta/bufexplorer'
+"Plugin 'jlanzarotta/bufexplorer'
 Plugin 'scrooloose/nerdTree'
 Plugin 'tpope/vim-surround'
-Plugin 'luochen1990/rainbow'
+"Plugin 'luochen1990/rainbow'
 "Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
