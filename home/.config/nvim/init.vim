@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
-"Plug 'luochen1990/rainbow'
+Plug 'luochen1990/rainbow'
 "Plug 'majutsushi/tagbar'
 "Plug 'benekastah/neomake'
 Plug 'morhetz/gruvbox'
@@ -26,7 +26,7 @@ filetype plugin indent on
 " Plugin settings
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "let g:deoplete#enable_at_startup = 1
-"let g:rainbow_active = 1
+let g:rainbow_active = 1
 
 " Disable confirmation for ycm config
 let g:ycm_confirm_extra_conf = 0
@@ -37,6 +37,10 @@ autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buf
 " Highlight trailing whitespace in red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
+
+" Close Omni-Completion tip window on close
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " General settings
 set backupdir=/var/tmp,/tmp
@@ -64,8 +68,8 @@ syntax enable
 set background=dark
 
 " GRUVBOX
-let g:gruvbox_contrast_dark="hard"
-let g:gruvbox_contrast_light="hard"
+let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_contrast_light="medium"
 colorscheme gruvbox
 
 " SOLARIZED
