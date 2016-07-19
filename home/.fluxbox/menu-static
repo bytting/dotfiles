@@ -27,6 +27,8 @@
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
+        [exec] (qpaeq) {qpaeq}
+        [exec] (pavucontrol) {pavucontrol}
 	[end]
 	[submenu] (network)
 		[exec] (firefox) {firefox}
