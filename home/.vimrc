@@ -13,12 +13,15 @@ Plug 'bling/vim-airline'
 "Plug 'scrooloose/nerdTree'
 "Plug 'luochen1990/rainbow'
 "Plug 'majutsushi/tagbar'
+Plug 'jeetsukumaran/vim-buffergator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
 filetype plugin indent on
+
+let mapleader = "\<Space>"
 
 " Plugin configurations
 "let g:rainbow_active = 1
@@ -95,6 +98,8 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-m> :call NumberToggle()<CR>
 "nnoremap <F7> :NERDTreeToggle<CR>
 "nnoremap <F8> :TagbarToggle<CR>
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>j :BuffergatorToggle<CR>
 
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
