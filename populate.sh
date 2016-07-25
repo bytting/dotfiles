@@ -14,3 +14,13 @@ for target in `find $src -type f`
 do
     ln -sf $target ${target/#$src/$HOME}
 done
+
+# Create user-dirs
+mkdir -p $HOME/doc
+mkdir -p $HOME/tmp
+mkdir -p $HOME/comp/desktop
+mkdir -p $HOME/comp/templates
+mkdir -p $HOME/comp/public
+mkdir -p $HOME/media/images
+mkdir -p $HOME/media/music
+mkdir -p $HOME/media/video
