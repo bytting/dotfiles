@@ -16,11 +16,27 @@ do
 done
 
 # Create user-dirs
-mkdir -p $HOME/doc
-mkdir -p $HOME/tmp
-mkdir -p $HOME/comp/desktop
-mkdir -p $HOME/comp/templates
-mkdir -p $HOME/comp/public
-mkdir -p $HOME/media/images
-mkdir -p $HOME/media/music
-mkdir -p $HOME/media/video
+if [ ! -d "$HOME/doc" ] then
+    mkdir -p $HOME/doc
+fi
+if [ ! -d "$HOME/tmp" ] then
+    mkdir -p $HOME/tmp
+fi
+if [ ! -d "$HOME/comp/desktop" ] then
+    mkdir -p $HOME/comp/desktop
+fi
+if [ ! -d "$HOME/comp/templates" ] then
+    mkdir -p $HOME/comp/templates
+fi
+if [ ! -d "$HOME/comp/public" ] then
+    mkdir -p $HOME/comp/public
+fi
+if [ ! -d "$HOME/media/images" ] then
+    mkdir -p $HOME/media/images
+fi
+if [ ! -d "$HOME/media/music" ] then
+    mkdir -p $HOME/media/music
+fi
+if [ ! -d "$HOME/media/video" ] then
+    mkdir -p $HOME/media/video
+fi
