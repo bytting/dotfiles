@@ -16,6 +16,7 @@ do
 done
 
 # Create user-dirs
-mkdir -p $HOME/{doc,tmp,mnt}
+mkdir -p $HOME/{bin,doc,tmp,mnt,dev}
+mkdir -p $HOME/dev/{c,cc,go,rs,py,lua}
 mkdir -p $HOME/comp/{desktop,templates,public}
-mkdir -p $HOME/media/{images,music,video}
+mkdir -p $HOME/media/{images,icons,music,video}
