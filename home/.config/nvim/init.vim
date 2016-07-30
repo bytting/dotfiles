@@ -14,8 +14,8 @@ Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
 "Plug 'altercation/vim-colors-solarized'
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -103,6 +103,6 @@ nmap <C-i> :nohl<CR>
 
 nnoremap <C-m> :call NumberToggle()<CR>
 "nnoremap <F8> :TagbarToggle<CR>
-nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>f :Explore<CR>
 nnoremap <Leader>j :BuffergatorToggle<CR>
 
