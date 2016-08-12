@@ -102,4 +102,6 @@ nnoremap <C-m> :call NumberToggle()<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>f :Explore<CR>
 nnoremap <Leader>j :BuffergatorToggle<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
 

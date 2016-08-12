@@ -39,6 +39,7 @@
 		[exec] (hexchat) {hexchat}
 	[end]
 	[submenu] (system)
+		[exec] (virt-manager) {virt-manager}
 		[exec] (arandr) {arandr}
         [exec] (system monitor) {mate-system-monitor}
 		[exec] (gufw) {gksu gufw}
