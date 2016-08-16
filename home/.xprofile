@@ -6,12 +6,14 @@ xset -dpms
 
 setxkbmap -model pc105 -layout no -variant nodeadkeys -option ctrl:nocaps,lv3:lsgt_switch_latch
 
+xmodmap -e "keycode 25 = w W NoSymbol NoSymbol Up"
 xmodmap -e "keycode 27 = r R NoSymbol NoSymbol less"
 xmodmap -e "keycode 28 = t T NoSymbol NoSymbol greater"
 xmodmap -e "keycode 30 = u U NoSymbol NoSymbol braceleft"
 xmodmap -e "keycode 31 = i I NoSymbol NoSymbol bracketleft"
 xmodmap -e "keycode 32 = o O NoSymbol NoSymbol bracketright"
 xmodmap -e "keycode 33 = p P NoSymbol NoSymbol braceright"
+xmodmap -e "keycode 38 = a A NoSymbol NoSymbol Down"
 xmodmap -e "keycode 39 = s S NoSymbol NoSymbol backslash"
 xmodmap -e "keycode 40 = d D NoSymbol NoSymbol BackSpace"
 xmodmap -e "keycode 41 = f F NoSymbol NoSymbol Escape"
