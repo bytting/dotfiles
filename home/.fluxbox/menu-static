@@ -42,7 +42,7 @@
 		[exec] (virt-manager) {virt-manager}
 		[exec] (arandr) {arandr}
         [exec] (system monitor) {mate-system-monitor}
-		[exec] (gufw) {gksu gufw}
+		[exec] (firewall-config) {gksudo firewall-config}
 	[end]
 	[include] (~/.fluxbox/menu-dynamic)
 	[submenu] (Fluxbox menu)
