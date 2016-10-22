@@ -27,6 +27,7 @@
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
+		[exec] (google-earth) {google-earth}
         [exec] (qpaeq) {qpaeq}
         [exec] (pavucontrol) {pavucontrol}
 	[end]
