@@ -43,6 +43,7 @@
 		[exec] (virt-manager) {virt-manager}
 		[exec] (arandr) {arandr}
         [exec] (system monitor) {mate-system-monitor}
+        [exec] (disk usage analyzer) {mate-disk-usage-analyzer}
 		[exec] (firewall-config) {gksudo firewall-config}
 	[end]
 	[include] (~/.fluxbox/menu-dynamic)
