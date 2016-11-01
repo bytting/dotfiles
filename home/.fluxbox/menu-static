@@ -8,7 +8,7 @@
 	[submenu] (devel)
 		[exec] (gitter) {gitter}
 		[exec] (sublime text) {GOPATH=~/dev/go subl3}
-		[exec] (qtcreator) {qtcreator -style gtk}
+		[exec] (qtcreator) {qtcreator -platformtheme qt5ct}
 		[exec] (robomongo) {robomongo}
 		[exec] (sqlitebrowser) {sqlitebrowser}
 		[exec] (blender) {blender}
