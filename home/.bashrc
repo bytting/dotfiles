@@ -10,7 +10,6 @@ PS1='[\u@\h \W]\$ '
 
 [ -f $HOME/.aliases ] && source $HOME/.aliases
 [ -f $HOME/.dir_colors ] && eval `dircolors -b $HOME/.dir_colors`
-[ -f $HOME/.fzf.bash ] && source $HOME/.fzf.bash
 
 export RANGER_LOAD_DEFAULT_RC=FALSE
 

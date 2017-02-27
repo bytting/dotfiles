@@ -15,7 +15,7 @@ Plug 'morhetz/gruvbox'
 Plug 'jeetsukumaran/vim-buffergator'
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "Plug 'junegunn/fzf.vim'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 

@@ -1,6 +1,5 @@
 #!/bin/sh
-#
-compton -b
+
 dunst &
 nm-applet &
 #thunar --daemon &

@@ -1,10 +1,16 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
 	[exec] (urxvt) {urxvt}
-	[exec] (pluma) {pluma}
-	[exec] (caja) {caja}
+	[exec] (mousepad) {mousepad}
+	[exec] (thunar) {thunar}
+	[exec] (inox) {inox}
+	[exec] (inox incognito) {inox --incognito}
 	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
+	[submenu] (Fluxbox mode)
+		[exec] (normal) { cp /home/drb/.fluxbox/init-normal /home/drb/.fluxbox/init && cp /home/drb/.fluxbox/overlay-normal /home/drb/.fluxbox/overlay && fluxbox-remote restart }
+		[exec] (eve) { cp /home/drb/.fluxbox/init-eve /home/drb/.fluxbox/init && cp /home/drb/.fluxbox/overlay-eve /home/drb/.fluxbox/overlay && fluxbox-remote restart }
+	[end]
 	[submenu] (devel)
 		[exec] (gitter) {gitter}
 		[exec] (sublime text) {GOPATH=~/dev/go subl3}
@@ -13,19 +19,18 @@
 		[exec] (sqlitebrowser) {sqlitebrowser}
 		[exec] (blender) {blender}
 		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
-        [exec] (wxHexEditor) {wxHexEditor}
+	        [exec] (wxHexEditor) {wxHexEditor}
 	[end]
 	[submenu] (office)
 		[exec] (dash) {/home/drb/bin/dash-0.12.0/bin/dash-qt}
 		[exec] (electrum) {electrum}
 		[exec] (electrum-dash) {/home/drb/bin/Electrum-DASH-2.6.4/electrum-dash}
 		[exec] (galculator) {galculator}
-		[exec] (atril) {atril}
+		[exec] (evince) {evince}
 		[exec] (libreoffice) {libreoffice}
-		[exec] (engrampa) {engrampa}
 	[end]
 	[submenu] (media)
-		[exec] (eom) {eom}
+		[exec] (ristretto) {ristretto}
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
@@ -40,6 +45,9 @@
 		[exec] (transmission) {transmission-gtk}
 		[exec] (filezilla) {filezilla}
 		[exec] (hexchat) {hexchat}
+	[end]
+	[submenu] (games)
+		[exec] (EVE) {~/builds/evelauncher/evelauncher.sh}
 	[end]
 	[submenu] (system)
 		[exec] (virt-manager) {virt-manager}
