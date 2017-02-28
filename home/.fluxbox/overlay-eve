@@ -9,6 +9,6 @@ toolbar.clock.font:                     liberation sans-12:bold
 toolbar.workspace.font:                 liberation sans-12:bold
 toolbar.iconbar.focused.font:           liberation sans-12:bold
 toolbar.iconbar.unfocused.font:         liberation sans-12:bold
-window.font:                            liberation sans-10
-window.title.height:			12
+window.font:                            liberation sans-8
+window.title.height:			8
 toolbar.height:				32
