@@ -50,6 +50,7 @@
 		[exec] (EVE) {~/builds/evelauncher/evelauncher.sh}
 	[end]
 	[submenu] (system)
+		[exec] (task-manager) {xfce4-taskmanager}
 		[exec] (virt-manager) {virt-manager}
 		[exec] (arandr) {arandr}
         [exec] (system monitor) {mate-system-monitor}
