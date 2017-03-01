@@ -39,7 +39,7 @@ session.screen0.tabFocusModel:	ClickToTabFocus
 session.screen0.colPlacementDirection:	TopToBottom
 session.screen0.opaqueMove:	true
 session.screen0.windowMenu:	/home/drb/.fluxbox/windowmenu
-session.screen0.allowRemoteActions:	true
+session.screen0.allowRemoteActions:	false
 session.screen0.maxDisableResize:	false
 session.screen0.clickRaises:	true
 session.screen0.windowPlacement:	RowMinOverlapPlacement

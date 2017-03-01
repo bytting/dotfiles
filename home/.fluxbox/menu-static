@@ -7,10 +7,6 @@
 	[exec] (inox incognito) {inox --incognito}
 	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
-	[submenu] (Fluxbox mode)
-		[exec] (normal) { cp /home/drb/.fluxbox/init-normal /home/drb/.fluxbox/init && cp /home/drb/.fluxbox/overlay-normal /home/drb/.fluxbox/overlay && fluxbox-remote restart }
-		[exec] (eve) { cp /home/drb/.fluxbox/init-eve /home/drb/.fluxbox/init && cp /home/drb/.fluxbox/overlay-eve /home/drb/.fluxbox/overlay && fluxbox-remote restart }
-	[end]
 	[submenu] (devel)
 		[exec] (gitter) {gitter}
 		[exec] (sublime text) {GOPATH=~/dev/go subl3}

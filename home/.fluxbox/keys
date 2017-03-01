@@ -72,6 +72,9 @@ Mod1 F2 :Exec fbrun
 # current window commands
 Mod1 F4 :Close
 Mod1 F5 :Kill
+Mod1 F6 :MacroCmd {SetResourceValue session.screen0.toolbar.visible true} {Reconfigure}
+Mod1 F7 :MacroCmd {SetResourceValue session.screen0.toolbar.visible false} {Reconfigure}
+Mod1 F8 :ToggleDecor
 Mod1 F9 :Minimize
 Mod1 F10 :Maximize
 Mod1 F11 :Fullscreen
