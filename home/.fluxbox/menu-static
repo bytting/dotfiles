@@ -15,12 +15,9 @@
 		[exec] (sqlitebrowser) {sqlitebrowser}
 		[exec] (blender) {blender}
 		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
-	        [exec] (wxHexEditor) {wxHexEditor}
 	[end]
 	[submenu] (office)
-		[exec] (dash) {/home/drb/bin/dash-0.12.0/bin/dash-qt}
 		[exec] (electrum) {electrum}
-		[exec] (electrum-dash) {/home/drb/bin/Electrum-DASH-2.6.4/electrum-dash}
 		[exec] (galculator) {galculator}
 		[exec] (evince) {evince}
 		[exec] (libreoffice) {libreoffice}

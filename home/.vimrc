@@ -30,8 +30,11 @@ set autowrite
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set shiftround
+set autoindent
+set smartindent
+set smarttab
 set expandtab
+set shiftround
 set number
 set hlsearch
 set showmatch
