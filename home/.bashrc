@@ -5,7 +5,7 @@
 [[ $- != *i* ]] && return
 
 [ -f /usr/share/git/completion/git-prompt.sh ] && source /usr/share/git/completion/git-prompt.sh
-PS1='\[\e[1;35m\][\[\e[m\]\[\e[33m\]\u@\h\[\e[m\] \[\e[32m\]$PWD\[\e[m\]\[\e[1;36m\]$(__git_ps1)\[\e[m\]\[\e[1;35m\]]\[\e[m\]\n\$ '
+PS1='\[\e[1;33m\]\u@\h\[\e[m\] \[\e[1;32m\]$PWD\[\e[m\]\[\e[1;36m\]$(__git_ps1)\[\e[m\]\n\$ '
 
 # set -o vi
 
