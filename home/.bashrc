@@ -4,7 +4,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+[ -f /usr/share/git/completion/git-prompt.sh ] && source /usr/share/git/completion/git-prompt.sh
+PS1='[\u@\h \W]\[\e[1;36m\]$(__git_ps1)\[\e[m\]\$ '
 
 # set -o vi
 
