@@ -43,6 +43,7 @@ set wildignore+=*/tmp/*,*.so,*.o,*.swp,*~,*.zip,*.tgz,*.tar.gz
 set nowrap
 set mouse=a
 set t_Co=256
+set laststatus=2
 
 " Plugin configurations
 let g:rainbow_active = 1
@@ -51,7 +52,7 @@ let g:rainbow_active = 1
 let g:ycm_confirm_extra_conf = 0
 
 " Remove trailing whitespace on write
-autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+" autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
