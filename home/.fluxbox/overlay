@@ -11,4 +11,4 @@ toolbar.iconbar.focused.font:           liberation sans-14:bold
 toolbar.iconbar.unfocused.font:         liberation sans-14:bold
 window.font:                            liberation sans-12
 window.title.height:			        26
-toolbar.height:				            26
+toolbar.height:				            28

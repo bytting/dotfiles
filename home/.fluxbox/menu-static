@@ -1,11 +1,9 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
 	[exec] (urxvt) {urxvt}
-	[exec] (mousepad) {mousepad}
-	[exec] (thunar) {thunar}
-	[exec] (inox) {inox}
+	[exec] (pluma) {pluma}
+	[exec] (caja) {caja}
 	[exec] (inox incognito) {inox --incognito}
-	[exec] (chromium incognito) {chromium --incognito}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
 		[exec] (gitter) {gitter}
@@ -17,38 +15,39 @@
 		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
 	[end]
 	[submenu] (office)
-		[exec] (electrum) {electrum}
-		[exec] (galculator) {galculator}
-		[exec] (evince) {evince}
 		[exec] (libreoffice) {libreoffice}
+		[exec] (calculator) {mate-calc}
+		[exec] (dictionary) {mate-dictionary}
+		[exec] (atril) {atril}
+		[exec] (electrum) {electrum}
 	[end]
 	[submenu] (media)
-		[exec] (ristretto) {ristretto}
+		[exec] (eom) {eom}
 		[exec] (gimp) {gimp}
 		[exec] (inkscape) {inkscape}
 		[exec] (vlc) {vlc}
+		[exec] (screenshot) {mate-screenshot}
 		[exec] (google-earth) {google-earth}
         [exec] (qpaeq) {qpaeq}
         [exec] (pavucontrol) {pavucontrol}
 	[end]
 	[submenu] (network)
 		[exec] (firefox) {firefox}
-		[exec] (qtox) {qtox -style gtk}
 		[exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
 		[exec] (transmission) {transmission-gtk}
-		[exec] (filezilla) {filezilla}
 		[exec] (hexchat) {hexchat}
 	[end]
 	[submenu] (games)
 		[exec] (EVE) {~/builds/evelauncher/evelauncher.sh}
 	[end]
 	[submenu] (system)
-		[exec] (task-manager) {xfce4-taskmanager}
-		[exec] (virt-manager) {virt-manager}
-		[exec] (arandr) {arandr}
+		[exec] (color selector) {mate-color-select}
         [exec] (system monitor) {mate-system-monitor}
+        [exec] (system log) {mate-system-log}
+		[exec] (arandr) {arandr}
         [exec] (disk usage analyzer) {mate-disk-usage-analyzer}
-		[exec] (firewall-config) {gksudo firewall-config}
+		[exec] (firewall config) {gksudo firewall-config}
+		[exec] (virt manager) {virt-manager}
 	[end]
 	[include] (~/.fluxbox/menu-dynamic)
 	[submenu] (Fluxbox menu)

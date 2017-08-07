@@ -1,6 +1,6 @@
 XTerm*locale: true
 XTerm*geometry: 100x30
-XTerm*faceName: Source Code Pro Medium:size=16
+XTerm*faceName: Source Code Pro Medium:size=14
 !!XTerm*faceName: Roboto Mono:size=14
 !!XTerm*faceName: Droid Sans Mono:size=14
 XTerm*metaSendsEscape: true
