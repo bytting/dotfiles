@@ -1,37 +1,11 @@
 xset s off
 xset -dpms
 
-[ -f $HOME/.Xresources ] && xrdb -merge ~/.Xresources
-[ -f $HOME/.screenlayout/default.sh ] && source $HOME/.screenlayout/default.sh
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 setxkbmap -model pc105 -layout no -variant nodeadkeys -option ctrl:nocaps,lv3:lsgt_switch_latch
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
-xmodmap -e "keycode 27 = r R NoSymbol NoSymbol less"
-xmodmap -e "keycode 28 = t T NoSymbol NoSymbol greater"
-xmodmap -e "keycode 30 = u U NoSymbol NoSymbol braceleft"
-xmodmap -e "keycode 31 = i I NoSymbol NoSymbol braceright"
-xmodmap -e "keycode 32 = o O NoSymbol NoSymbol bracketleft"
-xmodmap -e "keycode 33 = p P NoSymbol NoSymbol bracketright"
-xmodmap -e "keycode 34 = aring Aring NoSymbol NoSymbol Up"
-xmodmap -e "keycode 39 = s S NoSymbol NoSymbol backslash"
-xmodmap -e "keycode 40 = d D NoSymbol NoSymbol BackSpace"
-xmodmap -e "keycode 41 = f F NoSymbol NoSymbol Escape"
-xmodmap -e "keycode 42 = g G NoSymbol NoSymbol slash"
-xmodmap -e "keycode 43 = h H NoSymbol NoSymbol numbersign"
-xmodmap -e "keycode 44 = j J NoSymbol NoSymbol Return"
-xmodmap -e "keycode 45 = k K NoSymbol NoSymbol parenleft"
-xmodmap -e "keycode 46 = l L NoSymbol NoSymbol parenright"
-xmodmap -e "keycode 47 = oslash Oslash NoSymbol NoSymbol Next"
-xmodmap -e "keycode 48 = ae AE NoSymbol NoSymbol Down"
-xmodmap -e "keycode 51 = apostrophe asterisk NoSymbol NoSymbol Prior"
-xmodmap -e "keycode 52 = z Z NoSymbol NoSymbol quotedbl"
-xmodmap -e "keycode 53 = x X NoSymbol NoSymbol apostrophe"
-xmodmap -e "keycode 54 = c C NoSymbol NoSymbol asterisk"
-xmodmap -e "keycode 55 = v V NoSymbol NoSymbol bar"
-xmodmap -e "keycode 57 = n N NoSymbol NoSymbol dollar"
-xmodmap -e "keycode 58 = m M NoSymbol NoSymbol at"
-xmodmap -e "keycode 59 = comma semicolon NoSymbol NoSymbol exclam"
-xmodmap -e "keycode 60 = period colon NoSymbol NoSymbol percent"
-xmodmap -e "keycode 61 = minus underscore NoSymbol NoSymbol ampersand"
+[[ -f ~/.screenlayout/default.sh ]] && source ~/.screenlayout/default.sh
 
 export QT_QPA_PLATFORMTHEME="qt5ct"

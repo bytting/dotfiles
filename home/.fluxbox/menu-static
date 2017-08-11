@@ -3,7 +3,7 @@
 	[exec] (urxvt) {urxvt}
 	[exec] (pluma) {pluma}
 	[exec] (caja) {caja}
-	[exec] (inox incognito) {inox --incognito}
+	[exec] (inox) {inox --incognito}
 	[exec] (chromium) {chromium}
 	[submenu] (devel)
 		[exec] (gitter) {gitter}

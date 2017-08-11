@@ -1,5 +1,5 @@
 #!/bin/sh
 
-[ -f ~/.xprofile ] && source ~/.xprofile
+[[ -f ~/.xprofile ]] && source ~/.xprofile
 
 exec startfluxbox
