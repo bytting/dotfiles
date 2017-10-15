@@ -24,6 +24,7 @@ filetype plugin indent on
 let mapleader = "\<Space>"
 
 " General settings
+set encoding=utf-8
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 set autowrite
@@ -44,6 +45,9 @@ set nowrap
 set mouse=a
 set t_Co=256
 set laststatus=2
+
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set invlist
 
 " Plugin configurations
 let g:rainbow_active = 1

@@ -3,9 +3,5 @@ xset -dpms
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-setxkbmap -model pc105 -layout no -variant nodeadkeys -option ctrl:nocaps,lv3:lsgt_switch_latch
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
-
-[[ -f ~/.screenlayout/default.sh ]] && source ~/.screenlayout/default.sh
-
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
