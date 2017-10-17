@@ -1,3 +1,4 @@
+XTerm*boldColors: false
 XTerm*locale: true
 XTerm*geometry: 100x30
 !!XTerm*faceName: Source Code Pro Medium:size=14
