@@ -1,71 +1,72 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-	[exec] (urxvt) {urxvt}
-	[exec] (pluma) {pluma}
-	[exec] (caja) {caja}
-	[exec] (inox) {inox --incognito}
-	[exec] (chromium) {chromium}
-	[submenu] (devel)
-		[exec] (gitter) {gitter}
-		[exec] (sublime text) {GOPATH=~/dev/go subl3}
-		[exec] (qtcreator) {qtcreator -platformtheme qt5ct}
-		[exec] (robomongo) {robomongo}
-		[exec] (sqlitebrowser) {sqlitebrowser}
-		[exec] (blender) {blender}
-		[exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
-	[end]
-	[submenu] (office)
-		[exec] (libreoffice) {libreoffice}
-		[exec] (calculator) {mate-calc}
-		[exec] (dictionary) {mate-dictionary}
-		[exec] (atril) {atril}
-		[exec] (electrum) {electrum}
-	[end]
-	[submenu] (media)
-		[exec] (eom) {eom}
-		[exec] (gimp) {gimp}
-		[exec] (inkscape) {inkscape}
-		[exec] (vlc) {vlc}
-		[exec] (screenshot) {mate-screenshot}
-		[exec] (google-earth) {google-earth}
+    [exec] (xterm) {xterm}
+    [exec] (urxvt) {urxvt}
+    [exec] (pluma) {pluma}
+    [exec] (caja) {caja}
+    [exec] (inox) {inox --incognito}
+    [exec] (chromium) {chromium}
+    [submenu] (devel)
+        [exec] (gitter) {gitter}
+        [exec] (sublime text) {GOPATH=~/dev/go subl3}
+        [exec] (qtcreator) {qtcreator -platformtheme qt5ct}
+        [exec] (robomongo) {robomongo}
+        [exec] (sqlitebrowser) {sqlitebrowser}
+        [exec] (blender) {blender}
+        [exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
+    [end]
+    [submenu] (office)
+        [exec] (libreoffice) {libreoffice}
+        [exec] (calculator) {mate-calc}
+        [exec] (dictionary) {mate-dictionary}
+        [exec] (atril) {atril}
+        [exec] (electrum) {electrum}
+    [end]
+    [submenu] (media)
+        [exec] (eom) {eom}
+        [exec] (gimp) {gimp}
+        [exec] (inkscape) {inkscape}
+        [exec] (vlc) {vlc}
+        [exec] (screenshot) {mate-screenshot}
+        [exec] (google-earth) {google-earth}
         [exec] (qpaeq) {qpaeq}
         [exec] (pavucontrol) {pavucontrol}
-	[end]
-	[submenu] (network)
-		[exec] (firefox) {firefox}
-		[exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
-		[exec] (transmission) {transmission-gtk}
-		[exec] (hexchat) {hexchat}
-	[end]
-	[submenu] (games)
-		[exec] (EVE) {~/builds/evelauncher/evelauncher.sh}
-	[end]
-	[submenu] (system)
-		[exec] (color selector) {mate-color-select}
+    [end]
+    [submenu] (network)
+        [exec] (firefox) {firefox}
+        [exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
+        [exec] (transmission) {transmission-gtk}
+        [exec] (hexchat) {hexchat}
+    [end]
+    [submenu] (games)
+        [exec] (EVE) {~/builds/evelauncher/evelauncher.sh}
+    [end]
+    [submenu] (system)
+        [exec] (color selector) {mate-color-select}
         [exec] (system monitor) {mate-system-monitor}
         [exec] (system log) {mate-system-log}
-		[exec] (arandr) {arandr}
+        [exec] (arandr) {arandr}
         [exec] (disk usage analyzer) {mate-disk-usage-analyzer}
-		[exec] (firewall config) {gksudo firewall-config}
-		[exec] (virt manager) {virt-manager}
-	[end]
-	[include] (~/.fluxbox/menu-dynamic)
-	[submenu] (Fluxbox menu)
-		[exec] (Update Menu) {xdg_menu --format fluxbox  --root-menu /etc/xdg/menus/arch-applications.menu > ~/.fluxbox/menu-dynamic}
-		[config] (Configure)
-		[submenu] (System Styles) {Choose a style...}
-			[stylesdir] (/usr/share/fluxbox/styles)
-		[end]
-		[submenu] (User Styles) {Choose a style...}
-			[stylesdir] (~/.fluxbox/styles)
-		[end]
-		[workspaces] (Workspace List)
-		[commanddialog] (Fluxbox Command)
-		[reconfig] (Reload config)
-		[restart] (Restart)
-		[exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
-		[separator]
-		[exit] (Exit)
-	[end]
+        [exec] (firewall config) {gksudo firewall-config}
+        [exec] (virt manager) {virt-manager}
+    [end]
+    [include] (~/.fluxbox/menu-dynamic)
+    [submenu] (Fluxbox menu)
+        [exec] (Update Menu) {xdg_menu --format fluxbox  --root-menu /etc/xdg/menus/arch-applications.menu > ~/.fluxbox/menu-dynamic}
+        [config] (Configure)
+        [submenu] (System Styles) {Choose a style...}
+            [stylesdir] (/usr/share/fluxbox/styles)
+        [end]
+        [submenu] (User Styles) {Choose a style...}
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [workspaces] (Workspace List)
+        [commanddialog] (Fluxbox Command)
+        [reconfig] (Reload config)
+        [restart] (Restart)
+        [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+        [separator]
+        [exit] (Exit)
+    [end]
 [endencoding]
 [end]
