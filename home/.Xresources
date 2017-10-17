@@ -11,7 +11,7 @@ XTerm*cursorBlink: true
 
 URxvt*background: #002b36
 URxvt*foreground: #657b83
-!!URxvt*intensityStyles: false
+URxvt*intensityStyles: false
 URxvt*geometry: 100x35
 URxvt*scrollBar: false
 URxvt*saveLines: 2000
