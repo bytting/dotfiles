@@ -1,9 +1,10 @@
+
 XTerm*boldColors: false
 XTerm*locale: true
-XTerm*geometry: 100x30
-!!XTerm*faceName: Source Code Pro Medium:size=14
+XTerm*geometry: 120x40
+XTerm*faceName: Source Code Pro Medium:size=18
 !!XTerm*faceName: Roboto Mono:size=14
-XTerm*faceName: Droid Sans Mono:size=14
+!!XTerm*faceName: Droid Sans Mono:size=14
 XTerm*metaSendsEscape: true
 XTerm*saveLines: 2000
 XTerm*termName: xterm-256color
@@ -13,14 +14,14 @@ XTerm*cursorBlink: true
 URxvt*background: #002b36
 URxvt*foreground: #657b83
 URxvt*intensityStyles: false
-URxvt*geometry: 100x35
+URxvt*geometry: 120x40
 URxvt*scrollBar: false
 URxvt*saveLines: 2000
 URxvt*buffered: true
 URxvt*termName: rxvt-256color
-!!URxvt*font: xft:Source Code Pro Medium:size=16
+URxvt*font: xft:Source Code Pro Medium:size=18
 !!URxvt*font: xft:Roboto Mono:size=14
-URxvt*font: xft:Droid Sans Mono:size=14
+!!URxvt*font: xft:Droid Sans Mono:size=14
 
 Xft.dpi: 120
 Xft.autohint: 0

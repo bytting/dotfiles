@@ -3,5 +3,11 @@ xset -dpms
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+[[ -f ~/.screenlayout/default.sh ]] && ~/.screenlayout/default.sh
+
+setxkbmap -model pc105 -layout no -variant nodeadkeys -option ctrl:nocaps,lv3:lsgt_switch_latch
+xmodmap -e "keycode 59 = comma semicolon NoSymbol NoSymbol less"
+xmodmap -e "keycode 60 = period colon NoSymbol NoSymbol greater"
+
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
