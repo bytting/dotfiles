@@ -38,9 +38,6 @@
         [exec] (transmission) {transmission-gtk}
         [exec] (hexchat) {hexchat}
     [end]
-    [submenu] (games)
-        [exec] (EVE) {~/builds/evelauncher/evelauncher.sh}
-    [end]
     [submenu] (system)
         [exec] (color selector) {mate-color-select}
         [exec] (system monitor) {mate-system-monitor}
