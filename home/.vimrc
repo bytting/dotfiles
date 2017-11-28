@@ -24,6 +24,7 @@ filetype plugin indent on
 let mapleader = "\<Space>"
 
 " General settings
+set path+=**
 set encoding=utf-8
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
