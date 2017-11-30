@@ -93,8 +93,9 @@ endfunc
 
 " Keybindings
 nmap <C-s> :w<CR>
-imap <C-s> <Esc>:w<CR>a
 nmap <C-i> :nohl<CR>
+imap <C-L> <Esc>
+imap <C-s> <Esc>:w<CR>a
 
 "nnoremap <C-J> <C-W><C-J>
 "nnoremap <C-K> <C-W><C-K>
