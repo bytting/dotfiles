@@ -46,6 +46,7 @@ set nowrap
 set mouse=a
 set t_Co=256
 set laststatus=2
+set lazyredraw
 
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 set invlist
@@ -57,7 +58,7 @@ let g:rainbow_active = 1
 let g:ycm_confirm_extra_conf = 0
 
 " Remove trailing whitespace on write
-" autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -102,7 +103,7 @@ endfunc
 " Keymappings
 nmap <C-s> :w<CR>
 nmap <C-i> :nohl<CR>
-imap <C-L> <ESC>
+imap <C-K> <ESC>
 imap <C-s> <Esc>:w<CR>a
 "nnoremap <C-J> <C-W><C-J>
 "nnoremap <C-K> <C-W><C-K>
