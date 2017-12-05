@@ -91,6 +91,16 @@ set foldnestmax=6       "deepest fold is 6 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
 
+" Keymappings
+nmap <C-s> :w<CR>
+nmap <C-i> :nohl<CR>
+imap <C-k> <ESC>
+imap <C-s> <Esc>:w<CR>a
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
+
 " Relative line numbers toggle
 function! NumberToggle()
   if(&relativenumber == 1)
@@ -100,20 +110,12 @@ function! NumberToggle()
   endif
 endfunc
 
-" Keymappings
-nmap <C-s> :w<CR>
-nmap <C-i> :nohl<CR>
-imap <C-K> <ESC>
-imap <C-s> <Esc>:w<CR>a
-"nnoremap <C-J> <C-W><C-J>
-"nnoremap <C-K> <C-W><C-K>
-"nnoremap <C-L> <C-W><C-L>
-"nnoremap <C-H> <C-W><C-H>
-
-nnoremap <C-m> :call NumberToggle()<CR>
+nnoremap <Leader>d :call NumberToggle()<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>f :Explore<CR>
 nnoremap <Leader>j :BuffergatorToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+
+map <F9> :make<CR>
 
