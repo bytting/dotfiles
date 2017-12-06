@@ -93,8 +93,8 @@ set foldlevel=1
 
 " Keymappings
 nmap <C-s> :w<CR>
-nmap <C-i> :nohl<CR>
-imap <C-k> <ESC>
+nmap <C-e> :nohl<CR>
+imap <C-i> <ESC>
 imap <C-s> <Esc>:w<CR>a
 "nnoremap <C-J> <C-W><C-J>
 "nnoremap <C-K> <C-W><C-K>
@@ -113,7 +113,7 @@ endfunc
 nnoremap <Leader>d :call NumberToggle()<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>f :Explore<CR>
-nnoremap <Leader>j :BuffergatorToggle<CR>
+nnoremap <Leader>b :BuffergatorToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
