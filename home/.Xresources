@@ -2,7 +2,7 @@
 XTerm*boldColors: false
 XTerm*locale: true
 XTerm*geometry: 120x40
-XTerm*faceName: Source Code Pro Medium:size=18
+XTerm*faceName: Source Code Pro Medium:size=16
 !!XTerm*faceName: Roboto Mono:size=14
 !!XTerm*faceName: Droid Sans Mono:size=14
 XTerm*metaSendsEscape: true
@@ -19,11 +19,11 @@ URxvt*scrollBar: false
 URxvt*saveLines: 2000
 URxvt*buffered: true
 URxvt*termName: rxvt-256color
-URxvt*font: xft:Source Code Pro Medium:size=18
+URxvt*font: xft:Source Code Pro Medium:size=16
 !!URxvt*font: xft:Roboto Mono:size=14
 !!URxvt*font: xft:Droid Sans Mono:size=14
 
-Xft.dpi: 120
+Xft.dpi: 108
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull

@@ -113,9 +113,10 @@ endfunc
 nnoremap <Leader>d :call NumberToggle()<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>f :Explore<CR>
-nnoremap <Leader>b :BuffergatorToggle<CR>
+nnoremap <Leader>j :BuffergatorToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>k :nohl<CR>
 
 map <F9> :make<CR>
 

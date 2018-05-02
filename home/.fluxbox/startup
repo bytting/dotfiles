@@ -1,7 +1,9 @@
 #!/bin/sh
 
+#compton -b
 dunst &
 nm-applet &
+pasystray &
 #thunar --daemon &
 
 exec fluxbox
