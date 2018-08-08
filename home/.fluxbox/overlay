@@ -5,10 +5,10 @@ background.color: #000000
 menu.title.font:                        liberation sans-28:bold
 menu.frame.font:                        liberation sans-22:bold
 menu.hilite.font:                       liberation sans-22:bold
-toolbar.clock.font:                     liberation sans-14:bold
-toolbar.workspace.font:                 liberation sans-14:bold
-toolbar.iconbar.focused.font:           liberation sans-14:bold
-toolbar.iconbar.unfocused.font:         liberation sans-14:bold
-window.font:                            liberation sans-12
-window.title.height:			        26
-toolbar.height:				            28
+toolbar.clock.font:                     liberation sans-12:bold
+toolbar.workspace.font:                 liberation sans-12:bold
+toolbar.iconbar.focused.font:           liberation sans-12:bold
+toolbar.iconbar.unfocused.font:         liberation sans-12:bold
+window.font:                            liberation sans-10
+window.title.height:			        24
+toolbar.height:				            26

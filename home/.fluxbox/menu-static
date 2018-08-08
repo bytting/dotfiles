@@ -4,13 +4,15 @@
     [exec] (urxvt) {urxvt}
     [exec] (pluma) {pluma}
     [exec] (caja) {caja}
-    [exec] (inox) {inox --incognito}
+    [exec] (inox) {inox}
+    [exec] (inox incognito) {inox --incognito}
     [exec] (chromium) {chromium}
+    [exec] (firefox) {firefox}
     [submenu] (devel)
         [exec] (gitter) {gitter}
         [exec] (sublime text) {GOPATH=~/dev/go subl3}
         [exec] (qtcreator) {qtcreator -platformtheme qt5ct}
-        [exec] (robomongo) {robomongo}
+        [exec] (robo3t) {robo3t}
         [exec] (sqlitebrowser) {sqlitebrowser}
         [exec] (blender) {blender}
         [exec] (ogremeshy) {/usr/lib/ogremeshy/OgreMeshy}
