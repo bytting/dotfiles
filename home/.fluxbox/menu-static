@@ -1,13 +1,9 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-    [exec] (xterm) {xterm}
-    [exec] (lxterminal) {lxterminal}
-    [exec] (pluma) {pluma}
-    [exec] (caja) {caja}
-    [exec] (inox) {inox}
-    [exec] (inox incognito) {inox --incognito}
-    [exec] (chromium) {chromium}
-    [exec] (firefox) {firefox}
+    [exec] (terminal) {lxterminal}
+    [exec] (notepad) {pluma}
+    [exec] (file-manager) {caja}
+    [exec] (browser) {chromium}
     [submenu] (devel)
         [exec] (gitter) {gitter}
         [exec] (sublime text) {GOPATH=~/dev/go subl3}
