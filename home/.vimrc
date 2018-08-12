@@ -7,9 +7,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
+Plug 'lifepillar/vim-solarized8'
 "Plug 'altercation/vim-colors-solarized'
 "Plug 'majutsushi/tagbar'
 Plug 'jeetsukumaran/vim-buffergator'
@@ -58,7 +60,7 @@ let g:rainbow_active = 1
 let g:ycm_confirm_extra_conf = 0
 
 " Remove trailing whitespace on write
-autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,rs,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -71,18 +73,29 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Stop complaining about switching away from unsaved buffers
 au FocusLost * silent! wa
 
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+
 " Set color scheme
 syntax enable
-set background=dark
+set background=light
 
-" GRUVBOX
-let g:gruvbox_contrast_dark="hard"
-let g:gruvbox_contrast_light="hard"
-colorscheme gruvbox
+" GRUVBOX color scheme
+"let g:gruvbox_contrast_dark="hard"
+"let g:gruvbox_contrast_light="hard"
+"colorscheme gruvbox
 
-" SOLARIZED
+" SOLARIZED color scheme
 "let g:solarized_termcolors=256
 "colorscheme solarized
+
+" SOLARIZED8 color scheme
+colorscheme solarized8
+
+" airline color scheme
+let g:airline_theme='solarized'
 
 "set clipboard=unnamed
 

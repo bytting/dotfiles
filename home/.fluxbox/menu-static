@@ -1,7 +1,7 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
     [exec] (xterm) {xterm}
-    [exec] (urxvt) {urxvt}
+    [exec] (lxterminal) {lxterminal}
     [exec] (pluma) {pluma}
     [exec] (caja) {caja}
     [exec] (inox) {inox}
@@ -33,6 +33,7 @@
         [exec] (google-earth) {google-earth}
         [exec] (qpaeq) {qpaeq}
         [exec] (pavucontrol) {pavucontrol}
+        [exec] (paprefs) {paprefs}
     [end]
     [submenu] (network)
         [exec] (firefox) {firefox}
