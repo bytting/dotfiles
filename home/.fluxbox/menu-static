@@ -2,8 +2,9 @@
 [encoding] {UTF-8}
     [exec] (terminal) {lxterminal}
     [exec] (notepad) {pluma}
-    [exec] (file-manager) {caja}
-    [exec] (browser) {chromium}
+    [exec] (files) {caja}
+    [exec] (web) {firefox}
+    [exec] (irc) {hexchat}
     [submenu] (devel)
         [exec] (gitter) {gitter}
         [exec] (sublime text) {GOPATH=~/dev/go subl3}
