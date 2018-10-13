@@ -1,7 +1,7 @@
 [Added Associations]
 application/javascript=sublime_text_3.desktop;mousepad.desktop;
 application/json=sublime_text_3.desktop;mousepad.desktop;org.gnome.gedit.desktop;pluma.desktop;
-application/pdf=org.pwmt.zathura-pdf-poppler.desktop;gv.desktop;
+application/pdf=org.pwmt.zathura.desktop;org.pwmt.zathura-pdf-poppler.desktop;gv.desktop;
 application/x-desktop=sublime_text_3.desktop;
 application/x-shellscript=sublime_text_3.desktop;
 application/x-tgif=mousepad.desktop;
@@ -9,7 +9,7 @@ audio/mpeg=vlc.desktop;audacious.desktop;
 image/gif=ristretto.desktop;gimp.desktop;
 image/jpeg=ristretto.desktop;gimp.desktop;
 image/png=ristretto.desktop;gimp.desktop;
-text/plain=mousepad.desktop;sublime_text_3.desktop;
+text/plain=sublime_text_3.desktop;mousepad.desktop;
 text/x-c++src=sublime_text_3.desktop;qtcreator.desktop;
 text/x-chdr=sublime_text_3.desktop;
 text/x-csrc=sublime_text_3.desktop;
@@ -84,6 +84,7 @@ video/x-xplayer-stream=mpv.desktop;
 text/html=qutebrowser.desktop;
 x-scheme-handler/http=qutebrowser.desktop;
 x-scheme-handler/https=qutebrowser.desktop;
+application/x-mozilla-bookmarks=qutebrowser.desktop;
 
 [Default Applications]
 application/json=sublime_text_3.desktop
@@ -93,7 +94,7 @@ image/gif=ristretto.desktop
 image/jpeg=ristretto.desktop
 image/png=ristretto.desktop
 text/html=qutebrowser.desktop
-text/plain=sublime_text_3.desktop
+text/plain=mousepad.desktop
 text/x-arduino=arduino-arduinoide.desktop
 text/x-go=sublime_text_3.desktop
 video/x-msvideo=mpv.desktop
@@ -162,7 +163,7 @@ image/x-xpixmap=ristretto.desktop
 video/dv=mpv.desktop
 video/fli=mpv.desktop
 video/vnd.mpegurl=mpv.desktop
-video/vnd.vivo=xplayer.desktop
+video/vnd.vivo=mpv.desktop
 video/x-xplayer-stream=mpv.desktop
 x-scheme-handler/ftp=qutebrowser.desktop
 x-scheme-handler/chrome=qutebrowser.desktop
