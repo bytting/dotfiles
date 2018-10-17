@@ -28,8 +28,6 @@ Xft.rgba: rgb
 !! Solarized dark color scheme
 ! *background:            #002b36
 ! *foreground:            #657b83
-! *background:            #002b36
-! *foreground:            #657b83
 ! *cursorColor:           #93a1a1
 ! *pointerColorBackground:#586e75
 ! *pointerColorForeground:#93a1a1
