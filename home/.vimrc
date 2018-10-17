@@ -17,12 +17,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
-"Plug 'lifepillar/vim-solarized8'
-"Plug 'altercation/vim-colors-solarized'
-"Plug 'majutsushi/tagbar'
 Plug 'jeetsukumaran/vim-buffergator'
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
 "Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
@@ -82,26 +77,20 @@ au FocusLost * silent! wa
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-"colorscheme solarized8
-
-
-" Set color scheme
+" Set colors
 syntax enable
 set background=dark
 
-" GRUVBOX color scheme
+" Gruvbox color scheme
 "let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
 
-" SOLARIZED color scheme
-"let g:solarized_termcolors=256
-"colorscheme solarized
+" Airline color scheme
+let g:airline_theme='gruvbox'
 
-" airline color scheme
-"let g:airline_theme='solarized'
-
+" Enable true colors
 set t_Co=256
 set termguicolors
 
