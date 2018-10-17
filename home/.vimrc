@@ -1,5 +1,11 @@
 set nocompatible
 
+if has("gui_running")
+    set guifont=Source\ Code\ Pro\ Medium\ 16
+    set guioptions-=T
+    set guioptions-=m
+endif
+
 " Disable filetype while loading plugins
 filetype off
 
@@ -78,14 +84,13 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 "colorscheme solarized8
 
-"set t_Co=256
-"set termguicolors
 
 " Set color scheme
 syntax enable
 set background=dark
 
 " GRUVBOX color scheme
+"let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
@@ -96,6 +101,9 @@ colorscheme gruvbox
 
 " airline color scheme
 "let g:airline_theme='solarized'
+
+set t_Co=256
+set termguicolors
 
 "set clipboard=unnamed
 
