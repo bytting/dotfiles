@@ -1464,6 +1464,8 @@ c.fonts.tabs = '11pt monospace'
 c.url.searchengines = {
         'DEFAULT': 'https://duckduckgo.com/?q={}',
         'dd': 'https://duckduckgo.com/?q={}',
+        'ya': 'https://yandex.com/search/?text={}',
+        'bi': 'https://www.bing.com/search?q={}',
         'go': 'https://www.google.com/search?hl=en&q={}',
         'sp': 'https://www.startpage.com/do/dsearch?query={}',
         'wa': 'https://wiki.archlinux.org/?search={}',
