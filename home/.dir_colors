@@ -35,10 +35,10 @@
 # core {{{1
 BLK                   38;5;68
 CAPABILITY            38;5;17
-CHR                   38;5;113;1
-DIR                   38;5;30
+CHR                   38;5;113
+DIR                   38;5;30;1
 DOOR                  38;5;127
-EXEC                  38;5;208;1
+EXEC                  38;5;208
 FIFO                  38;5;126
 FILE                  38;5;101
 LINK                  target
@@ -71,7 +71,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 *CHANGES              38;5;75
 .log                  38;5;140
 # plain-text {{{2
-.txt                  38;5;172
+.txt                  38;5;223
 # markup {{{2
 .etx                  38;5;58
 .info                 38;5;58
@@ -93,21 +93,21 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .rdata                38;5;178
 # }}}
 # binary {{{2
-.cbr                  38;5;37
-.cbz                  38;5;37
-.chm                  38;5;37
-.djvu                 38;5;37
-.pdf                  38;5;37
-.PDF                  38;5;37
+.cbr                  38;5;12
+.cbz                  38;5;12
+.chm                  38;5;12
+.djvu                 38;5;12
+.pdf                  38;5;12
+.PDF                  38;5;12
 # words {{{3
-.docm                 38;5;111
-.doc                  38;5;111
-.docx                 38;5;111
-.eps                  38;5;111
-.ps                   38;5;111
-.odb                  38;5;111
-.odt                  38;5;111
-.rtf                  38;5;111
+.docm                 38;5;114
+.doc                  38;5;114
+.docx                 38;5;114
+.eps                  38;5;114
+.ps                   38;5;114
+.odb                  38;5;114
+.odt                  38;5;114
+.rtf                  38;5;114
 # presentation {{{3
 .odp                  38;5;166
 .pps                  38;5;166
@@ -120,39 +120,39 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 #   Powerpoint show with enabled macros
 .pptsm                38;5;166
 # spreadsheet {{{3
-.csv                  38;5;73
+.csv                  38;5;13
 #   Open document spreadsheet
-.ods                  38;5;73
-.xla                  38;5;73
+.ods                  38;5;13
+.xla                  38;5;13
 #   Excel spreadsheet
-.xls                  38;5;73
-.xlsx                 38;5;73
+.xls                  38;5;13
+.xlsx                 38;5;13
 #   Excel spreadsheet with macros
-.xlsxm                38;5;73
+.xlsxm                38;5;13
 #   Excel module
-.xltm                 38;5;76
-.xltx                 38;5;76
+.xltm                 38;5;13
+.xltx                 38;5;13
 # }}}
 # }}}
 # configs {{{2
-*cfg                  1
-*conf                 1
-*rc                   1
-.ini                  1
+*cfg                  38;5;11
+*conf                 38;5;11
+*rc                   38;5;11
+.ini                  38;5;11
 #   vim
-.viminfo              1
+.viminfo              38;5;11
 #   cisco VPN client configuration
-.pcf                  1
+.pcf                  38;5;11
 #   adobe photoshop proof settings file
-.psf                  1
+.psf                  38;5;11
 # }}}
 # }}}
 # code {{{1
 # version control {{{2
 .git                  38;5;197
-.gitignore            38;5;240
-.gitattributes        38;5;240
-.gitmodules           38;5;240
+.gitignore            38;5;197
+.gitattributes        38;5;197
+.gitmodules           38;5;197
 
 # shell {{{2
 .awk                  38;5;172
@@ -197,15 +197,16 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 #   Moonscript
 .moon                 38;5;81
 #   C
-.c                    38;5;131
-.C                    38;5;131
+.c                    38;5;41
+.C                    38;5;41
 .h                    38;5;6
 .H                    38;5;6
 .tcc                  38;5;131
 #   C++
-.c++                  38;5;131
-.cc                   38;5;131
-.cpp                  38;5;131
+.c++                  38;5;41
+.cc                   38;5;41
+.cpp                  38;5;41
+.cxx                  38;5;41
 .h++                  38;5;6
 .hh                   38;5;6
 .hpp                  38;5;6
@@ -215,67 +216,64 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .M                    38;5;110
 .m                    38;5;110
 #   Csharp
-.cc                   38;5;31
-.cs                   38;5;31
-.cp                   38;5;31
-.cpp                  38;5;31
-.cxx                  38;5;31
+.cs                   38;5;41
+.cp                   38;5;41
 #   Crystal
-.cr                   38;5;31
+.cr                   38;5;41
 #   Google golang
-.go                   38;5;31
+.go                   38;5;41
 #   fortran
-.f                    38;5;31
-.for                  38;5;31
-.ftn                  38;5;31
+.f                    38;5;41
+.for                  38;5;41
+.ftn                  38;5;41
 #   pascal
-.s                    38;5;131
-.S                    38;5;131
+.s                    38;5;41
+.S                    38;5;41
 #   Rust
-.rs                   38;5;131
+.rs                   38;5;41
 #   ?
-.sx                   38;5;131
+.sx                   38;5;41
 #   interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
 .hi                   38;5;6
 #   haskell
-.hs                   38;5;131
-.lhs                  38;5;131
+.hs                   38;5;41
+.lhs                  38;5;41
 
 # binaries {{{2
 # compiled apps for interpreted languages
 .pyc                  38;5;240
 # }}}
 # html {{{2
-.css                  38;5;125;1
-.less                 38;5;125;1
-.sass                 38;5;125;1
-.scss                 38;5;125;1
-.htm                  38;5;125;1
-.html                 38;5;125;1
-.jhtm                 38;5;125;1
-.mht                  38;5;125;1
-.eml                  38;5;125;1
-.mustache             38;5;125;1
+.css                  38;5;125
+.less                 38;5;125
+.sass                 38;5;125
+.scss                 38;5;125
+.htm                  38;5;125
+.html                 38;5;125
+.jhtm                 38;5;125
+.mht                  38;5;125
+.eml                  38;5;125
+.mustache             38;5;125
 # }}}
 # java {{{2
-.coffee               38;5;074;1
-.java                 38;5;074;1
-.js                   38;5;074;1
-.jsm                  38;5;074;1
-.jsm                  38;5;074;1
-.jsp                  38;5;074;1
+.coffee               38;5;41
+.java                 38;5;41
+.js                   38;5;41
+.jsm                  38;5;41
+.jsm                  38;5;41
+.jsp                  38;5;41
 # }}}
 # php {{{2
-.php                  38;5;81
+.php                  38;5;41
 #   CakePHP view scripts and helpers
-.ctp                  38;5;81
+.ctp                  38;5;41
 #   Twig template engine
-.twig                 38;5;81
+.twig                 38;5;41
 # }}}
 # vb/a {{{2
-.vb                   38;5;81
-.vba                  38;5;81
-.vbs                  38;5;81
+.vb                   38;5;41
+.vba                  38;5;41
+.vbs                  38;5;41
 # 2}}}
 # Build stuff {{{2
 *Makefile             38;5;184
@@ -292,8 +290,8 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .SKIP                 38;5;244
 # }}}
 # patch files {{{2
-.diff                 48;5;197;38;5;232
-.patch                48;5;197;38;5;232;1
+.diff                 38;5;197
+.patch                38;5;197
 #}}}
 # graphics {{{1
 .bmp                  38;5;70
@@ -343,28 +341,28 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .vob                  38;5;115;1
 # }}}
 # audio {{{1
-.3ga                  38;5;137;1
-.S3M                  38;5;137;1
-.aac                  38;5;137;1
-.dat                  38;5;137;1
-.dts                  38;5;137;1
-.fcm                  38;5;137;1
-.m4a                  38;5;137;1
-.mid                  38;5;137;1
-.midi                 38;5;137;1
-.mod                  38;5;137;1
-.mp3                  38;5;137;1
-.oga                  38;5;137;1
-.ogg                  38;5;137;1
-.s3m                  38;5;137;1
-.sid                  38;5;137;1
+.3ga                  38;5;130
+.S3M                  38;5;130
+.aac                  38;5;130
+.dat                  38;5;130
+.dts                  38;5;130
+.fcm                  38;5;130
+.m4a                  38;5;130
+.mid                  38;5;130
+.midi                 38;5;130
+.mod                  38;5;130
+.mp3                  38;5;130
+.oga                  38;5;130
+.ogg                  38;5;130
+.s3m                  38;5;130
+.sid                  38;5;130
 # lossless
-.ape                  38;5;136;1
-.flac                 38;5;136;1
-.alac                 38;5;136;1
-.wav                  38;5;136;1
-.wv                   38;5;136;1
-.wvc                  38;5;136;1
+.ape                  38;5;136
+.flac                 38;5;136
+.alac                 38;5;136
+.wav                  38;5;136
+.wv                   38;5;136
+.wvc                  38;5;136
 
 # }}}
 # fonts {{{1
