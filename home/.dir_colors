@@ -73,15 +73,15 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 # plain-text {{{2
 .txt                  38;5;223
 # markup {{{2
-.etx                  38;5;58
-.info                 38;5;58
-.markdown             38;5;58
-.md                   38;5;58
-.mkd                  38;5;58
-.nfo                  38;5;58
-.pod                  38;5;58
-.tex                  38;5;58
-.textile              38;5;58
+.etx                  38;5;215
+.info                 38;5;215
+.markdown             38;5;215
+.md                   38;5;215
+.mkd                  38;5;215
+.nfo                  38;5;215
+.pod                  38;5;215
+.tex                  38;5;215
+.textile              38;5;215
 # key-value, non-relational data {{{2
 .json                 38;5;178
 .msg                  38;5;178
@@ -167,16 +167,16 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 # interpreted {{{2
 .ahk                  38;5;41
 # python
-.py                   38;5;6
+.py                   38;5;41
 # perl
-.pl                   38;5;6
-.PL                   38;5;6
-.t                    38;5;6
+.pl                   38;5;41
+.PL                   38;5;41
+.t                    38;5;41
 # sql
-.msql                 38;5;8
-.mysql                38;5;8
-.pgsql                38;5;8
-.sql                  38;5;8
+.msql                 38;5;215
+.mysql                38;5;215
+.pgsql                38;5;215
+.sql                  38;5;215
 #   Tool Command Language
 .tcl                  38;5;64
 # R language
@@ -244,16 +244,16 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .pyc                  38;5;240
 # }}}
 # html {{{2
-.css                  38;5;125
-.less                 38;5;125
-.sass                 38;5;125
-.scss                 38;5;125
-.htm                  38;5;125
-.html                 38;5;125
-.jhtm                 38;5;125
-.mht                  38;5;125
-.eml                  38;5;125
-.mustache             38;5;125
+.css                  38;5;167
+.less                 38;5;167
+.sass                 38;5;167
+.scss                 38;5;167
+.htm                  38;5;167
+.html                 38;5;167
+.jhtm                 38;5;167
+.mht                  38;5;167
+.eml                  38;5;167
+.mustache             38;5;167
 # }}}
 # java {{{2
 .coffee               38;5;41
