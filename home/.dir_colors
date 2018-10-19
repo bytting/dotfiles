@@ -40,7 +40,7 @@ DIR                   38;5;32;1
 DOOR                  38;5;127
 EXEC                  38;5;208
 FIFO                  38;5;126
-FILE                  38;5;101
+FILE                  38;5;223
 LINK                  target
 MULTIHARDLINK         38;5;11;1
 # "NORMAL don't reset the bold attribute -
@@ -93,12 +93,12 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .rdata                38;5;178
 # }}}
 # binary {{{2
-.cbr                  38;5;149
-.cbz                  38;5;149
-.chm                  38;5;149
-.djvu                 38;5;149
-.pdf                  38;5;149
-.PDF                  38;5;149
+.cbr                  38;5;147
+.cbz                  38;5;147
+.chm                  38;5;147
+.djvu                 38;5;147
+.pdf                  38;5;147
+.PDF                  38;5;147
 # words {{{3
 .docm                 38;5;114
 .doc                  38;5;114
@@ -244,16 +244,16 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .pyc                  38;5;240
 # }}}
 # html {{{2
-.css                  38;5;167
-.less                 38;5;167
-.sass                 38;5;167
-.scss                 38;5;167
-.htm                  38;5;167
-.html                 38;5;167
-.jhtm                 38;5;167
-.mht                  38;5;167
-.eml                  38;5;167
-.mustache             38;5;167
+.css                  38;5;29
+.less                 38;5;29
+.sass                 38;5;29
+.scss                 38;5;29
+.htm                  38;5;29
+.html                 38;5;29
+.jhtm                 38;5;29
+.mht                  38;5;29
+.eml                  38;5;29
+.mustache             38;5;29
 # }}}
 # java {{{2
 .coffee               38;5;41
@@ -520,21 +520,22 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .part                 38;5;239
   # }}}
 # partition images {{{2
-.iso                  38;5;124
-.bin                  38;5;124
-.nrg                  38;5;124
-.qcow                 38;5;124
-.sparseimage          38;5;124
+.iso                  38;5;101
+.img                  38;5;101
+.bin                  38;5;101
+.nrg                  38;5;101
+.qcow                 38;5;101
+.sparseimage          38;5;101
 # }}}
 # databases {{{2
-.accdb                38;5;130
-.accde                38;5;130
-.accdr                38;5;130
-.accdt                38;5;130
-.db                   38;5;130
-.localstorage         38;5;130
-.sqlite               38;5;130
-.typelib              38;5;130
+.accdb                38;5;131
+.accde                38;5;131
+.accdr                38;5;131
+.accdt                38;5;131
+.db                   38;5;131
+.localstorage         38;5;131
+.sqlite               38;5;131
+.typelib              38;5;131
 # NetCDF database
 .nc                   38;5;130
 # }}}
