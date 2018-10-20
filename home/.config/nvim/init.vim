@@ -1,5 +1,11 @@
 set nocompatible
 
+if has("gui_running")
+    set guifont=Source\ Code\ Pro\ Medium\ 16
+    set guioptions-=T
+    set guioptions-=m
+endif
+
 " Disable filetype while loading plugins
 filetype off
 
@@ -7,14 +13,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
-"Plug 'altercation/vim-colors-solarized'
-"Plug 'majutsushi/tagbar'
 Plug 'jeetsukumaran/vim-buffergator'
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
 "Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
@@ -44,7 +47,6 @@ set wildmenu
 set wildignore+=*/tmp/*,*.so,*.o,*.swp,*~,*.zip,*.tgz,*.tar.gz
 set nowrap
 set mouse=a
-set t_Co=256
 set laststatus=2
 set lazyredraw
 
@@ -58,7 +60,7 @@ let g:rainbow_active = 1
 let g:ycm_confirm_extra_conf = 0
 
 " Remove trailing whitespace on write
-" autocmd FileType c,cc,cpp,h,hh,hpp,go,py,java,php,js,pl autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,rs,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -71,18 +73,26 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Stop complaining about switching away from unsaved buffers
 au FocusLost * silent! wa
 
-" Set color scheme
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" Set colors
 syntax enable
 set background=dark
 
-" GRUVBOX
+" Gruvbox color scheme
+"let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
 
-" SOLARIZED
-"let g:solarized_termcolors=256
-"colorscheme solarized
+" Airline color scheme
+let g:airline_theme='gruvbox'
+
+" Enable true colors
+set t_Co=256
+set termguicolors
 
 "set clipboard=unnamed
 
@@ -90,6 +100,16 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=6       "deepest fold is 6 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
+
+" Keymappings
+nmap <C-s> :w<CR>
+nmap <C-e> :nohl<CR>
+imap <C-i> <ESC>
+imap <C-s> <Esc>:w<CR>a
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 " Relative line numbers toggle
 function! NumberToggle()
@@ -100,20 +120,13 @@ function! NumberToggle()
   endif
 endfunc
 
-" Keymappings
-nmap <C-s> :w<CR>
-nmap <C-i> :nohl<CR>
-imap <C-K> <ESC>
-imap <C-s> <Esc>:w<CR>a
-"nnoremap <C-J> <C-W><C-J>
-"nnoremap <C-K> <C-W><C-K>
-"nnoremap <C-L> <C-W><C-L>
-"nnoremap <C-H> <C-W><C-H>
-
-nnoremap <C-m> :call NumberToggle()<CR>
+nnoremap <Leader>d :call NumberToggle()<CR>
 "nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>f :Explore<CR>
 nnoremap <Leader>j :BuffergatorToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>k :nohl<CR>
+
+map <F9> :make<CR>
 

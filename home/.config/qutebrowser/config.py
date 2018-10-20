@@ -1473,7 +1473,8 @@ c.url.searchengines = {
         'yt': 'https://www.youtube.com/results?search_query={}',
         'gh': 'https://github.com/search?q={}',
         'arch': 'https://www.archlinux.org/packages/?q={}',
-        'aur': 'https://aur.archlinux.org/packages/?O=0&K={}'
+        'aur': 'https://aur.archlinux.org/packages/?O=0&K={}',
+        'imdb': 'https://www.imdb.com/find?q={}'
  }
 
 ## Page(s) to open at the start.
