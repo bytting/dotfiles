@@ -16,7 +16,12 @@ bindsym $mod+q kill
 
 bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+for_window [class="Xfce4-appfinder"] floating enable
 bindsym $mod+y exec --no-startup-id xfce4-appfinder
+
+for_window [instance="st_scratchpad"] move scratchpad, scratchpad show
+bindsym $mod+t exec --no-startup-id st -n st_scratchpad
 
 # change focus
 bindsym $mod+h focus left
