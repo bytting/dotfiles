@@ -17,12 +17,6 @@ bindsym $mod+q kill
 bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-for_window [class="Xfce4-appfinder"] floating enable
-bindsym $mod+y exec --no-startup-id xfce4-appfinder
-
-for_window [instance="st_scratchpad"] move scratchpad, scratchpad show
-bindsym $mod+t exec --no-startup-id st -n st_scratchpad
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -85,10 +79,10 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-bindsym $mod+Tab workspace next
+bindsym $mod+.ab workspace next
 bindsym $mod+Shift+Tab workspace prev
-bindsym $mod+u workspace prev
-bindsym $mod+p workspace next
+bindsym $mod+comma workspace prev
+bindsym $mod+period workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -152,3 +146,14 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 exec --no-startup-id xsetroot -solid "#000000"
 exec --no-startup-id nm-applet
 
+for_window [instance="st_floating"] floating enable
+bindsym $mod+y exec --no-startup-id st -n st_floating
+
+for_window [class="Xfce4-appfinder"] floating enable
+bindsym $mod+u exec --no-startup-id xfce4-appfinder
+
+bindsym $mod+i exec --no-startup-id thunar
+
+bindsym $mod+o exec --no-startup-id qutebrowser
+
+bindsym $mod+p exec --no-startup-id audacious

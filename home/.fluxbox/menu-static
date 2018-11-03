@@ -1,9 +1,9 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-    [exec] (terminal) {lxterminal}
-    [exec] (notepad) {pluma}
+    [exec] (term) {st -t "Simple Terminal"}
+    [exec] (text) {pluma}
     [exec] (files) {caja}
-    [exec] (web) {firefox}
+    [exec] (web) {chromium}
     [exec] (irc) {hexchat}
     [submenu] (devel)
         [exec] (gitter) {gitter}
@@ -26,6 +26,7 @@
         [exec] (gimp) {gimp}
         [exec] (inkscape) {inkscape}
         [exec] (vlc) {vlc}
+        [exec] (audacious) {audacious}
         [exec] (screenshot) {mate-screenshot}
         [exec] (google-earth) {google-earth}
         [exec] (qpaeq) {qpaeq}
@@ -34,11 +35,14 @@
     [end]
     [submenu] (network)
         [exec] (firefox) {firefox}
+        [exec] (qute-browser) {qute-browser}
         [exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
         [exec] (transmission) {transmission-gtk}
         [exec] (hexchat) {hexchat}
     [end]
     [submenu] (system)
+        [exec] (st) {st}
+        [exec] (lxappearance) {lxappearance}
         [exec] (color selector) {mate-color-select}
         [exec] (system monitor) {mate-system-monitor}
         [exec] (system log) {mate-system-log}
