@@ -1,10 +1,10 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-    [exec] (term) {st -t "Simple Terminal"}
-    [exec] (text) {pluma}
-    [exec] (files) {caja}
-    [exec] (web) {chromium}
-    [exec] (irc) {hexchat}
+    [exec] (terminal) {st -t "Simple Terminal"}
+    [exec] (notepad) {pluma}
+    [exec] (file manager) {caja}
+    [exec] (web browser) {chromium}
+    [exec] (irc chat) {hexchat}
     [submenu] (devel)
         [exec] (gitter) {gitter}
         [exec] (sublime text) {GOPATH=~/dev/go subl3}
@@ -41,12 +41,13 @@
         [exec] (hexchat) {hexchat}
     [end]
     [submenu] (system)
-        [exec] (st) {st}
+        [exec] (simple terminal) {st -t "Simple Terminal"}
+        [exec] (mate terminal) {mate-terminal}
         [exec] (lxappearance) {lxappearance}
         [exec] (color selector) {mate-color-select}
         [exec] (system monitor) {mate-system-monitor}
         [exec] (system log) {mate-system-log}
-        [exec] (arandr) {arandr}
+        [exec] (lxrandr) {lxrandr}
         [exec] (disk usage analyzer) {mate-disk-usage-analyzer}
         [exec] (firewall config) {gksudo firewall-config}
         [exec] (virt manager) {virt-manager}
