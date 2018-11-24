@@ -12,6 +12,7 @@ PS1='\[\e[1;33m\]\u@\h\[\e[m\] \[\e[1;32m\]$PWD\[\e[m\]\[\e[1;36m\]$(__git_ps1)\
 [ -f $HOME/.aliases ] && source $HOME/.aliases
 [ -f $HOME/.dir_colors ] && eval `dircolors -b $HOME/.dir_colors`
 
+export TERM=xterm-256color
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
 export GOROOT=/usr/lib/go

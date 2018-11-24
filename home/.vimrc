@@ -2,8 +2,8 @@ set nocompatible
 
 if has("gui_running")
     set guifont=Source\ Code\ Pro\ Medium\ 16
-    set guioptions-=T
-    set guioptions-=m
+"    set guioptions-=T
+"    set guioptions-=m
 endif
 
 " Disable filetype while loading plugins
