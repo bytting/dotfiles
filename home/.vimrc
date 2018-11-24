@@ -49,8 +49,8 @@ set nowrap
 set mouse=a
 set laststatus=2
 set lazyredraw
-
-set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set showbreak=↪\
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set invlist
 
 " Plugin configurations
