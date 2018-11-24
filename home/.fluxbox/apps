@@ -1,0 +1,3 @@
+[app] (Name=.*)
+    [Position] (CENTER) {0 0}
+[end]
