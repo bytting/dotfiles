@@ -104,7 +104,7 @@ set foldlevel=1
 " Keymappings
 nmap <C-s> :w<CR>
 nmap <C-e> :nohl<CR>
-imap <C-i> <ESC>
+imap <C-k> <ESC>
 imap <C-s> <Esc>:w<CR>a
 "nnoremap <C-J> <C-W><C-J>
 "nnoremap <C-K> <C-W><C-K>
