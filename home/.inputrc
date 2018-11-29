@@ -2,13 +2,13 @@
 set bell-style none
 
 # Set vi mode
-set editing-mode vi
+#set editing-mode vi
 
 # Show current mode in prompt
-set show-mode-in-prompt on
+#set show-mode-in-prompt on
 
-set keymap vi-command
+#set keymap vi-command
 # keybindings for normal mode here...
 
-set keymap vi-insert
+#set keymap vi-insert
 # keybindings for insert mode here...

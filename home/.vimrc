@@ -13,12 +13,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
 Plug 'jeetsukumaran/vim-buffergator'
-"Plug 'Valloric/YouCompleteMe'
+Plug 'vim-syntastic/syntastic'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
@@ -38,7 +40,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set smarttab
-set expandtab
+"set expandtab
 set shiftround
 set number
 set hlsearch
@@ -50,14 +52,15 @@ set mouse=a
 set laststatus=2
 set lazyredraw
 set showbreak=↪\
-set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set listchars=tab:‣\ ,trail:·,precedes:«,extends:»
 set invlist
 
 " Plugin configurations
 let g:rainbow_active = 1
 
-" Disable confirmation for ycm configurations
-let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+let g:go_fmt_command = "goimports"
 
 " Remove trailing whitespace on write
 autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,rs,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
