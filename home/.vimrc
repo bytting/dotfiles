@@ -18,9 +18,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
-Plug 'jeetsukumaran/vim-buffergator'
 Plug 'vim-syntastic/syntastic'
 Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
@@ -67,6 +68,13 @@ let g:ycm_confirm_extra_conf = 0
 " Use goimports for Go formatting
 let g:go_fmt_command = "goimports"
 
+" Start nerdtree if vim opens a folder
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" Close vim if nerdtree is the only window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Remove trailing whitespace on write
 autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,rs,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
 
@@ -109,32 +117,28 @@ set foldnestmax=6       "deepest fold is 6 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
 
-" Keymappings
-nmap <C-s> :w<CR>
-nmap <C-e> :nohl<CR>
-imap <C-k> <ESC>
-imap <C-s> <Esc>:w<CR>a
-"nnoremap <C-J> <C-W><C-J>
-"nnoremap <C-K> <C-W><C-K>
-"nnoremap <C-L> <C-W><C-L>
-"nnoremap <C-H> <C-W><C-H>
-
 " Relative line numbers toggle
 function! NumberToggle()
-  if(&relativenumber == 1)
-    set norelativenumber
-  else
-    set relativenumber
-  endif
+	if(&relativenumber == 1)
+		set norelativenumber
+	else
+		set relativenumber
+	endif
 endfunc
 
+" Keymappings
+nmap <C-s> :w<CR>
+imap <C-k> <ESC>
+imap <C-s> <Esc>:w<CR>a
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 nnoremap <Leader>d :call NumberToggle()<CR>
-"nnoremap <F8> :TagbarToggle<CR>
-nnoremap <Leader>f :Explore<CR>
-nnoremap <Leader>j :BuffergatorToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>k :nohl<CR>
-
+map <F7> :NERDTreeToggle<CR>
+map <F8> :TagbarToggle<CR>
 map <F9> :make<CR>
 
