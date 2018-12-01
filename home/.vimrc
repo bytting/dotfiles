@@ -55,11 +55,16 @@ set showbreak=↪\
 set listchars=tab:‣\ ,trail:·,precedes:«,extends:»
 set invlist
 
-" Plugin configurations
+" Enable rainbow parentesis
 let g:rainbow_active = 1
 
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+" Set global YCM configuration file
+let g:ycm_global_ycm_extra_conf = '~/dev/.ycm_extra_conf.py'
 
+" Disable confirmation for YCM configurations
+let g:ycm_confirm_extra_conf = 0
+
+" Use goimports for Go formatting
 let g:go_fmt_command = "goimports"
 
 " Remove trailing whitespace on write
