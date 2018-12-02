@@ -16,9 +16,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'luochen1990/rainbow'
+"Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
@@ -66,7 +66,7 @@ let g:ycm_global_ycm_extra_conf = '~/dev/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 
 " Use goimports for Go formatting
-let g:go_fmt_command = "goimports"
+"let g:go_fmt_command = "goimports"
 
 " Start nerdtree if vim opens a folder
 "autocmd StdinReadPre * let s:std_in=1
