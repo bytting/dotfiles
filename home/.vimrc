@@ -16,12 +16,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Plug 'luochen1990/rainbow'
+Plug 'luochen1990/rainbow'
 Plug 'morhetz/gruvbox'
-"Plug 'vim-syntastic/syntastic'
 Plug 'Valloric/YouCompleteMe'
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'jeetsukumaran/vim-buffergator'
 
 call plug#end()
 
@@ -65,18 +65,17 @@ let g:ycm_global_ycm_extra_conf = '~/dev/.ycm_extra_conf.py'
 " Disable confirmation for YCM configurations
 let g:ycm_confirm_extra_conf = 0
 
-" Use goimports for Go formatting
-"let g:go_fmt_command = "goimports"
-
-" Start nerdtree if vim opens a folder
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-" Close vim if nerdtree is the only window
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 " Remove trailing whitespace on write
-autocmd FileType c,cc,cpp,h,hh,hpp,hxx,go,rs,py,java,php,js,pl,lua autocmd BufWritePre <buffer> %s/\s\+$//e
+function! <SID>DeleteTrailingWhitespace()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    let @/=_s
+    call cursor(l, c)
+endfunction
+autocmd BufWritePre *.c,*.cc,*.cpp,*.h,*.hh,*.hpp,*.cxx,*.hxx,*.go,*.rs,*.py,*.java,*.php,*.js,*.pl,*.lua :call <SID>DeleteTrailingWhitespace()
 
 " Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -117,6 +116,8 @@ set foldnestmax=6       "deepest fold is 6 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
 
+let g:netrw_banner = 0
+
 " Relative line numbers toggle
 function! NumberToggle()
 	if(&relativenumber == 1)
@@ -127,18 +128,18 @@ function! NumberToggle()
 endfunc
 
 " Keymappings
-nmap <C-s> :w<CR>
 imap <C-k> <ESC>
+nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <Leader>d :call NumberToggle()<CR>
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
+nnoremap <Leader>f :Explore<CR>
+nnoremap <Leader>j :BuffergatorToggle<CR>
 nnoremap <Leader>k :nohl<CR>
-map <F7> :NERDTreeToggle<CR>
+"map <F7> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
 map <F9> :make<CR>
 
