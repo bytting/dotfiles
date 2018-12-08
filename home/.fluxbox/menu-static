@@ -1,16 +1,17 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-    [exec] (mate terminal) {mate-terminal}
+    [exec] (terminal) {mate-terminal}
     [exec] (notepad) {pluma}
     [exec] (editor) {gvim}
-    [exec] (file manager) {caja}
-    [exec] (web browser) {chromium}
-    [exec] (irc chat) {hexchat}
+    [exec] (files) {caja}
+    [exec] (web) {chromium}
+    [exec] (irc) {hexchat}
     [submenu] (devel)
         [exec] (gitter) {gitter}
         [exec] (gvim) {gvim}
         [exec] (sublime text) {GOPATH=~/dev/go subl3}
         [exec] (qtcreator) {qtcreator -platformtheme qt5ct}
+        [exec] (pgadmin4) {pgadmin4}
         [exec] (robo3t) {robo3t}
         [exec] (sqlitebrowser) {sqlitebrowser}
         [exec] (blender) {blender}
@@ -49,6 +50,7 @@
         [exec] (color selector) {mate-color-select}
         [exec] (system monitor) {mate-system-monitor}
         [exec] (system log) {mate-system-log}
+        [exec] (arandr) {arandr}
         [exec] (lxrandr) {lxrandr}
         [exec] (disk usage analyzer) {mate-disk-usage-analyzer}
         [exec] (firewall config) {gksudo firewall-config}

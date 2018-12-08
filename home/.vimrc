@@ -75,7 +75,7 @@ function! <SID>DeleteTrailingWhitespace()
     let @/=_s
     call cursor(l, c)
 endfunction
-autocmd BufWritePre *.c,*.cc,*.cpp,*.h,*.hh,*.hpp,*.cxx,*.hxx,*.go,*.rs,*.py,*.java,*.php,*.js,*.pl,*.lua :call <SID>DeleteTrailingWhitespace()
+autocmd BufWritePre *.c,*.cc,*.cpp,*.h,*.hh,*.hpp,*.cxx,*.hxx,*.go,*.rs,*.py,*.java,*.php,*.js,*.pl,*.lua,*.sql :call <SID>DeleteTrailingWhitespace()
 
 " Close Omni-Completion tip window on close
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -135,9 +135,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <Leader>d :call NumberToggle()<CR>
+nnoremap <Leader>j :call NumberToggle()<CR>
 nnoremap <Leader>f :Explore<CR>
-nnoremap <Leader>j :BuffergatorToggle<CR>
+nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>k :nohl<CR>
 "map <F7> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
