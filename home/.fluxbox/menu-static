@@ -11,6 +11,7 @@
         [exec] (gvim) {gvim}
         [exec] (sublime text) {GOPATH=~/dev/go subl3}
         [exec] (qtcreator) {qtcreator -platformtheme qt5ct}
+        [exec] (dbeaver) {dbeaver}
         [exec] (pgadmin4) {pgadmin4}
         [exec] (robo3t) {robo3t}
         [exec] (sqlitebrowser) {sqlitebrowser}
@@ -38,7 +39,7 @@
     [end]
     [submenu] (network)
         [exec] (firefox) {firefox}
-        [exec] (qute-browser) {qute-browser}
+        [exec] (qute browser) {qutebrowser}
         [exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
         [exec] (transmission) {transmission-gtk}
         [exec] (hexchat) {hexchat}
