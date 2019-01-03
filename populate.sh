@@ -20,3 +20,5 @@ mkdir -p $HOME/{bin,doc,tmp,mnt,builds}
 mkdir -p $HOME/dev/{c,cc,go,rs,py,lua}
 mkdir -p $HOME/comp/{desktop,templates,public}
 mkdir -p $HOME/media/{images,icons,music,video}
+
+fc-cache -f -v
