@@ -4,6 +4,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+[ -f /etc/bash_completion.d/git-prompt ] && source /etc/bash_completion.d/git-prompt
 [ -f /usr/share/git/completion/git-prompt.sh ] && source /usr/share/git/completion/git-prompt.sh
 PS1='\[\e[1;33m\]\u@\h\[\e[m\] \[\e[1;32m\]$PWD\[\e[m\]\[\e[1;36m\]$(__git_ps1)\[\e[m\]\n\[\e[1;36m\]\$\[\e[m\] '
 
