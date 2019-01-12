@@ -1,11 +1,11 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
     [exec] (terminal) {mate-terminal}
-    [exec] (notepad) {pluma}
-    [exec] (editor) {gvim}
-    [exec] (files) {caja}
-    [exec] (web) {chromium}
-    [exec] (irc) {hexchat}
+    [exec] (pluma) {pluma}
+    [exec] (gvim) {gvim}
+    [exec] (caja) {caja}
+    [exec] (firefox) {env GTK_THEME=Adwaita:light firefox}
+    [exec] (hexchat) {hexchat}
     [submenu] (devel)
         [exec] (gitter) {gitter}
         [exec] (gvim) {gvim}
@@ -39,6 +39,7 @@
     [end]
     [submenu] (network)
         [exec] (firefox) {firefox}
+        [exec] (chromium) {chromium}
         [exec] (qute browser) {qutebrowser}
         [exec] (tor browser) {~/bin/tor-browser_en-US/Browser/start-tor-browser}
         [exec] (transmission) {transmission-gtk}
